@@ -47,7 +47,7 @@ async def bug(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://telegra.ph/file/bd218d4af1c69c586ebb0.jpg"
+    thumb = "https://telegra.ph/file/8dbea09e5726594de4324.jpg"
     
     bug_report = f"""
 **#BUG : ** **@{owner_usn}**
@@ -73,7 +73,7 @@ async def bug(_, msg: Message):
             return
         else:
             await msg.reply_text(
-                "Owner noob!"
+                "Oi oi oi baka you are the owner!"
             )
     elif user_id != owner_id:
         if bugs:
