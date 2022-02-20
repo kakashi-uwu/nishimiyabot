@@ -4,8 +4,8 @@ import re
 import time
 from functools import partial
 from io import BytesIO
-import SiestaRobot.modules.sql.welcome_sql as sql
-from SiestaRobot import (
+import EruRobot.modules.sql.welcome_sql as sql
+from EruRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
