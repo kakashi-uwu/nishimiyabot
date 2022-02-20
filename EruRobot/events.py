@@ -12,7 +12,7 @@ from EruRobot import telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["VainBot"]
+db = client["EruRobot"]
 gbanned = db.gban
 
 def register(**args):
