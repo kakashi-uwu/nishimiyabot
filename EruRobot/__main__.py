@@ -223,7 +223,7 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        ERUSTART = "https://telegra.ph/file/13d84151c151ecbcdf0d6.mp4"
+        KOMISTART = "https://telegra.ph/file/13d84151c151ecbcdf0d6.mp4"
         first_name = update.effective_user.first_name
         update.effective_message.reply_video(
            KOMISTART, caption= "<b>kon'nichiwa {} san, im eru!!. Whats up  ?\n let's play together if you are free? \nalive since</b>: <code>{}</code>".format(
