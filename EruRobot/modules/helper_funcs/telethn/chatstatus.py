@@ -1,5 +1,5 @@
-from SiestaRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from SiestaRobot import DRAGONS
+from EruRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from EruRobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
