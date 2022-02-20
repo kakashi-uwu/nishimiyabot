@@ -335,7 +335,7 @@ def info(update: Update, context: CallbackContext):
     except BadRequest:
         pass
 
-        for mod in USER_INFO:
+    for mod in USER_INFO:
         try:
             mod_info = mod.__user_info__(user.id).strip()
         except TypeError:
