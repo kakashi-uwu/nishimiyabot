@@ -5,7 +5,7 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import SiestaRobot
+import EruRobot
 
 from EruRobot import dispatcher
 from EruRobot.modules.helper_funcs.chat_status import dev_plus
@@ -22,9 +22,9 @@ def allow_groups(update: Update, context: CallbackContext):
         update.effective_message.reply_text(f"Current state: {state}")
         return
     if args[0].lower() in ["off", "no"]:
-        SiestaRobot.ALLOW_CHATS = True
+        EruRobot.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        SiestaRobot.ALLOW_CHATS = False
+        EruRobot.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return
