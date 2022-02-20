@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from EruRobot.sql import BASE, SESSION
+from EruRobot.modules.sql import BASE, SESSION
 
 
 class Nsfwatch(BASE):
