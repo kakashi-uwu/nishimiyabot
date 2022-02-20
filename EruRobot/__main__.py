@@ -34,7 +34,7 @@ from EruRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from EruRobot.EruRobot.modules import ALL_MODULES
+from EruRobot.modules import ALL_MODULES
 from EruRobot.modules.helper_funcs.chat_status import is_user_admin
 from EruRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
