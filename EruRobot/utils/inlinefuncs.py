@@ -22,21 +22,21 @@ from pyrogram.types import (CallbackQuery,
                             InputTextMessageContent)
 from search_engine_parser import GoogleSearch
 
-from SiestaRobot import (
+from EruRobot import (
     DEV_USERS,
     EVENT_LOGS, 
     BOT_USERNAME,
     ubot2,
 )
-from SiestaRobot import pbot as app 
-from SiestaRobot import arq
-from SiestaRobot.services.keyboard import Ikb
-from SiestaRobot.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
-from SiestaRobot.services.tasks import _get_tasks_text, all_tasks, rm_task
-from SiestaRobot.services.types import InlineQueryResultCachedDocument
-from SiestaRobot.modules.info import get_chat_info, get_user_info
-from SiestaRobot.utils.functions import test_speedtest
-from SiestaRobot.utils.pastebin import paste
+from EruRobot import pbot as app 
+from EruRobot import arq
+from EruRobot.services.keyboard import Ikb
+from EruRobot.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
+from EruRobot.services.tasks import _get_tasks_text, all_tasks, rm_task
+from EruRobot.services.types import InlineQueryResultCachedDocument
+from EruRobot.modules.info import get_chat_info, get_user_info
+from EruRobot.utils.functions import test_speedtest
+from EruRobot.utils.pastebin import paste
 
 MESSAGE_DUMP_CHAT = EVENT_LOGS
 
@@ -121,14 +121,14 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Siesta Robot ❤️](https://t.me/machinaxsupport):**
+**[EruRobot Robot ❤️](https://t.me/EruXSupport):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [OWNER BOT](t.me/saint_foire)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [OWNER BOT](t.me/baby_hoii)
 """
     answers.append(
         InlineQueryResultArticle(
