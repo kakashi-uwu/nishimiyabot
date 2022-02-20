@@ -388,7 +388,7 @@ def help_button(update, context):
         pass
 
 
-def eru_about_callback(update, context):
+def siesta_about_callback(update, context):
     query = update.callback_query
     chat = update.effective_chat
     if query.data == "eru_":
