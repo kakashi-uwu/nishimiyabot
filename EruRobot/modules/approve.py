@@ -1,5 +1,5 @@
 import html
-from EuRobot.modules.disable import DisableAbleCommandHandler
+from EruRobot.modules.disable import DisableAbleCommandHandler
 from EruRobot import dispatcher, DRAGONS
 from EruRobot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler
