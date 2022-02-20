@@ -24,7 +24,7 @@ async def carbon_func(_, message):
     carbon.close()
 
 
-MEMEK = "https://telegra.ph/file/31c56fb53884915fec558.jpg"
+MEMEK = "https://telegra.ph/file/8408e4ef091c3d97c8cb9.jpg"
 
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
@@ -32,21 +32,23 @@ async def repo(_, message):
         photo=MEMEK,
         caption=f"""✨ **Hey I'm Siesta Robot** ✨ 
 
-**Owner repo : [Vain](https://t.me/saint_foire)**
-**Python Version :** `{y()}`
-**Library Version :** `{o}`
-**Telethon Version :** `{s}`
-**Pyrogram Version :** `{z}`
+**Owner repo : [Baby](https://t.me/baby_hoii)**
+╔════════════════╗
+┣ Eh  baka unfortunately
+┣ you are not authorised
+┣ to use my repo source 
+┣ use the instructions below
+╚════════════════╝
 
-**Create your own with click button bellow.**
+**Contact academy support or my hubby for repo request.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/shiinobu/SiestaRobot"), 
+                        "Hubby", url="https://t.me/baby_hoii"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/machinaxsupport")
+                        "Support", url="https://t.me/eruXsupport")
                 ]
             ]
         )
