@@ -9,7 +9,7 @@ from EruRobot.events import register
 from EruRobot import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/ff2fa22dfa6ae838cc6cd.jpg"
+PHOTO = "https://telegra.ph/file/7bcbd82b7ea19702aaa75.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
