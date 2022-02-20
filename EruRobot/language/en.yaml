@@ -33,7 +33,7 @@ pm_about_text: |
   _eru's licensed under the GNU General Public License v3.0_
   Click on button bellow to get basic help for eru Robot.
 pm_about_admin_text: |
-  *✺ Let's make your group bit effective now ✺*
+  * Let's make your group bit effective now *
   Congragulations, Eru Robot now ready to manage your group.
   *Admin Tools*
   Basic Admin tools help you to protect and powerup your group.
@@ -42,22 +42,22 @@ pm_about_admin_text: |
   Lets set a welcome message to welcome new users coming to your group.
   Send `/setwelcome [message]` to set a welcome message!
 pm_about_notes_text: |
-  *✺ Setting up notes ✺*
+  * Setting up notes *
   ✪ You can save message/media/audio or anything as notes to get a note simply use # at the beginning of a word
   ✪ You can also set buttons for notes and filters (refer help menu)
 pm_about_support_text: |
-  *✺ Eru Robot support chats ✺*
+  * Eru Robot support chat*
   Join My Support Group/Channel for see or report a problem on Eru.
 pm_about_credit_text: |
-  *✺ credits for eru robot ✺*
-  Here Developers Making And Give Inspiration For Made The Eru Robot
+  * Eru robot credits  *
+  Here Developers it's eru robot made by academy officials.
 pm_help_text: |
-  *✺ Click on the button bellow to get description about specifics command. ✺*
+  * Hit the button below to see my command list. *
 pm_help_module_text: "Here is the help for the *{}* module :\n\n"
 
 # Group Help Text
-group_help_text: "Contact me in PM to get the list of possible commands."
-group_help_modules_text: "Contact me in PM to get help of *{}*"
+group_help_text: "hoi baka if you want help using me, come over my pm."
+group_help_modules_text: "Contact me in pm to get help of *{}*"
 # Group Help Button
 group_help_button: "Help"
 # PM Settings
@@ -125,7 +125,7 @@ anime_help: |
     ❂ /quote: send quotes randomly as text
 antichannel_help: |
     ──「 Anti-Channels 」──
-        ⚠️ WARNING ⚠️
+         WARNING 
     *IF YOU USE THIS MODE, THE RESULT IS IN THE GROUP FOREVER YOU CAN'T CHAT USING THE CHANNEL*
     Anti Channel Mode is a mode to automatically ban users who chat using Channels. 
     This command can only be used by *Admins*.
