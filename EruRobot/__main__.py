@@ -223,12 +223,32 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text(
-            text=gs(chat.id, "group_start_text").format(
-                escape_markdown(uptime),
-                ),
-            parse_mode=ParseMode.MARKDOWN
-       )
+        ERUSTART = "https://telegra.ph/file/13d84151c151ecbcdf0d6.mp4"
+        first_name = update.effective_user.first_name
+        update.effective_message.reply_video(
+           KOMISTART, caption= "<b>kon'nichiwa {} san, im eru!!. Whats up  ?\n let's play together if you are free? \nalive since</b>: <code>{}</code>".format(
+                escape_markdown(first_name),
+                uptime
+            ),
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="support",
+                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                        ),
+                        InlineKeyboardButton(
+                            text="love",
+                            url="https://t.me/baby_hoii",
+                        ),
+                        InlineKeyboardButton(
+                          text="help", url=f"https://t.me/eruxrobot?start=help"
+                        ),  
+                    ]
+                ]
+            ),
+        )
 
 
 def error_handler(update, context):
