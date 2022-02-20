@@ -335,7 +335,7 @@ def info(update: Update, context: CallbackContext):
     except BadRequest:
         pass
 
-    for mod in USER_INFO:
+        for mod in USER_INFO:
         try:
             mod_info = mod.__user_info__(user.id).strip()
         except TypeError:
@@ -345,27 +345,29 @@ def info(update: Update, context: CallbackContext):
 
     if INFOPIC:
         try:
+            username=update.effective_user.username
             profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
-            _file = bot.get_file(profile["file_id"])
-            _file.download(f"{user.id}.png")
-
-            message.reply_document(
-                document=open(f"{user.id}.png", "rb"),
+            context.bot.sendChatAction(chat.id, "upload_photo")
+            context.bot.send_photo(
+            chat.id,
+            photo=profile,
                 caption=(text),
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/KennedyProject/44"),
+                                "Support", url="https://t.me/eruXsupport"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/KennedyProject/43")
+                                "Disasters", url="https://t.me/eruxupdates"),
+                            InlineKeyboardButton(
+                                "User", url=f"https://t.me/{html.escape(user.username)}")
                         ],
                     ]
                 ),
                 parse_mode=ParseMode.HTML,
             )
 
-            os.remove(f"{user.id}.png")
+           
         # Incase user don't have profile pic, send normal text
         except IndexError:
             message.reply_text(
@@ -374,9 +376,11 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/KennedyProject/44"),
+                                "Support", url="https://t.me/eruXsupport"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/KennedyProject/43")
+                                "Disaster", url="https://t.me/eruxupdates"),
+                            InlineKeyboardButton(
+                                "User", url=f"https://t.me/{html.escape(user.username)}")
                         ],
                     ]
                 ),
@@ -388,6 +392,7 @@ def info(update: Update, context: CallbackContext):
         message.reply_text(
             text, parse_mode=ParseMode.HTML,
         )
+
 
     rep.delete()
 
