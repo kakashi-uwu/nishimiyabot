@@ -30,7 +30,7 @@ from telegram.ext import (
     Filters,
     MessageHandler,
 )
-from SiestaRobot.modules.language import gs
+from EruRobot.modules.language import gs
 
 FILE_MATCHER = re.compile(r"^###file_id(!photo)?###:(.*?)(?:\s|$)")
 STICKER_MATCHER = re.compile(r"^###sticker(!photo)?###:")
