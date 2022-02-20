@@ -9,7 +9,6 @@ import EruRobot.modules.sql.connection_sql as sql
 from EruRobot import dispatcher, DRAGONS, DEV_USERS
 from EruRobot.modules.helper_funcs import chat_status
 from EruRobot.modules.helper_funcs.alternate import send_message, typing_action
-from EruRobot.modules.language import gs
 
 user_admin = chat_status.user_admin
 
