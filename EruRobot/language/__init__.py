@@ -1,4 +1,4 @@
-from SiestaRobot.language.langs import langs
+from EruRobot.language.langs import langs
 
 get_string = langs.get_string
 reload_strings = langs.reload_strings
