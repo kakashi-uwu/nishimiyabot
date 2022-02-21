@@ -94,22 +94,22 @@ async def profanity(event):
     if not input:
         if is_nightmode_indb(str(event.chat_id)):
                 await event.reply(
-                    "Currently NightMode is Enabled for this Chat"
+                    "NightMode is activated for this Chat"
                 )
                 return
         await event.reply(
-            "Currently NightMode is Disabled for this Chat"
+            "NightMode is deactivated for this Chat"
         )
         return
     if "on" in input:
         if event.is_group:
             if is_nightmode_indb(str(event.chat_id)):
                     await event.reply(
-                        "Night Mode is Already Turned ON for this Chat"
+                        "Night Mode is Already activated for this Chat"
                     )
                     return
             add_nightmode(str(event.chat_id))
-            await event.reply("NightMode turned on for this chat.")
+            await event.reply("NightMode activated for this chat.")
     if "off" in input:
         if event.is_group:
             if not is_nightmode_indb(str(event.chat_id)):
@@ -118,7 +118,7 @@ async def profanity(event):
                     )
                     return
         rmnightmode(str(event.chat_id))
-        await event.reply("NightMode Disabled!")
+        await event.reply("NightMode Deactivated!")
     if not "off" in input and not "on" in input:
         await event.reply("Please Specify On or Off!")
         return
@@ -131,7 +131,7 @@ async def job_close():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By @emiexrobot**"
+              int(pro.chat_id), "12:00 Am, this gc will be closed till 6 am, have a nice sleep! \n**Powered By @eruxrobot**"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
