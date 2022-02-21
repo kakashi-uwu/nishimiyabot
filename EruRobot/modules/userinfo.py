@@ -452,15 +452,36 @@ def set_about_me(update: Update, context: CallbackContext):
             )
 
 @sudo_plus
-def stats(update: Update, context: CallbackContext):
-    stats = "<b>╔═━「 Current Siesta Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
-    result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n<b>╘═━「 Powered By Shiinobu 」</b>"
-    update.effective_message.reply_text(
-        result,
-        parse_mode=ParseMode.HTML, 
-        disable_web_page_preview=True
-   )
+def stats(update, context):
+    uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
+    status = "*╒═══「 Eru sama statistics 」*\n\n"
+    status += "*➢ Python Version:* " + python_version() + "\n"
+    status += "*➢ Uptime:* " + get_readable_time((time.time()-StartTime)) + "\n"
+    try:
+        update.effective_message.reply_text(
+            status
+            + "\n*Bot statistics*:\n"
+            + "\n".join([mod.__stats__() for mod in STATS])
+            + f"\n\n[× Support](https://t.me/{SUPPORT_CHAT}) | [× Updates](https://t.me/eruxupdates)\n\n"
+            + "╘══「 by [haruki](https://t.me/baby_hoii) 」\n",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+        )
+    except BaseException:
+        update.effective_message.reply_text(
+            (
+                (
+                    (
+                        "\n*Bot statistics*:\n"
+                        + "\n".join(mod.__stats__() for mod in STATS)
+                    )
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/eruxupdates)\n\n"
+                )
+                + "╘══「 by [haruki](https://t.me/baby_hoii) 」\n"
+            ),
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+        )
         
         
 def about_bio(update: Update, context: CallbackContext):
