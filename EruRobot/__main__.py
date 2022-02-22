@@ -737,7 +737,7 @@ def main():
     updater.idle()
 
 try:
-    bot.start()
+    pbot.start()
 except BaseException:
     print("Userbot Error! Have you added a STRING_SESSION in deploying??")
     sys.exit(1)
