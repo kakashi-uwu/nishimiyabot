@@ -103,35 +103,35 @@ for module_name in ALL_MODULES:
         imported_module.__mod_name__ = imported_module.__name__
 
 
-    if imported_module.mod_name.lower() not in IMPORTED:
-        IMPORTED[imported_module.mod_name.lower()] = imported_module
+if imported_module.__mod_name__.lower() not in IMPORTED:
+        IMPORTED[imported_module.__mod_name__.lower()] = imported_module
     else:
         raise Exception("Can't have two modules with the same name! Please change one")
 
     if hasattr(imported_module, "helps") and imported_module.helps:
-        HELPABLE[imported_module.mod_name.lower()] = imported_module
+        HELPABLE[imported_module.__mod_name__.lower()] = imported_module
 
     # Chats to migrate on chat_migrated events
-    if hasattr(imported_module, "migrate"):
+    if hasattr(imported_module, "__migrate__"):
         MIGRATEABLE.append(imported_module)
 
-    if hasattr(imported_module, "stats"):
+    if hasattr(imported_module, "__stats__"):
         STATS.append(imported_module)
 
-    if hasattr(imported_module, "user_info"):
+    if hasattr(imported_module, "__user_info__"):
         USER_INFO.append(imported_module)
 
-    if hasattr(imported_module, "import_data"):
+    if hasattr(imported_module, "__import_data__"):
         DATA_IMPORT.append(imported_module)
 
-    if hasattr(imported_module, "export_data"):
+    if hasattr(imported_module, "__export_data__"):
         DATA_EXPORT.append(imported_module)
 
-    if hasattr(imported_module, "chat_settings"):
-        CHAT_SETTINGS[imported_module.mod_name.lower()] = imported_module
+    if hasattr(imported_module, "__chat_settings__"):
+        CHAT_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
-    if hasattr(imported_module, "user_settings"):
-        USER_SETTINGS[imported_module.mod_name.lower()] = imported_module
+    if hasattr(imported_module, "__user_settings__"):
+        USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
 
 # do not async
