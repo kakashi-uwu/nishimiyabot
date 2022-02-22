@@ -448,7 +448,7 @@ def siesta_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "eru_admin":
+elif query.data == "eru_admin":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_admin_text"),
             parse_mode=ParseMode.MARKDOWN,
@@ -871,7 +871,7 @@ def main():
         Source_about_callback, pattern=r"source_", run_async=True
     )
 
-    donate_handler = CommandHandler("donate", donate, run_async=True)
+donate_handler = CommandHandler("donate", donate, run_async=True)
     migrate_handler = MessageHandler(
         Filters.status_update.migrate, migrate_chats, run_async=True
     )
