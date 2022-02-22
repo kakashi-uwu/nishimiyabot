@@ -35,12 +35,9 @@ from EruRobot import (
 #@weeb_o
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from EruRobot.events import register
 from EruRobot.modules import ALL_MODULES
 from EruRobot.modules.helper_funcs.chat_status import is_user_admin
-from EruRobot.modules.helper_funcs.alternate import typing_action
 from EruRobot.modules.helper_funcs.misc import paginate_modules
-from EruRobot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -57,12 +54,12 @@ from telegram.ext import (
     Filters,
     MessageHandler,
 )
-
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
-from pyrogram import Client, idle
-from telethon import Button, events
+from EruRobot.modules.language import gs
 
+
+    
     
 GROUP_START_IMG = ""
 
