@@ -99,8 +99,9 @@ USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("EruRobot.modules." + module_name)
-    if not hasattr(imported_module, "mod_name"):
-        imported_module.mod_name = imported_module.name
+    if not hasattr(imported_module, "__mod_name__"):
+        imported_module.__mod_name__ = imported_module.__name__
+
 
     if imported_module.mod_name.lower() not in IMPORTED:
         IMPORTED[imported_module.mod_name.lower()] = imported_module
