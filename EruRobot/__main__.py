@@ -101,7 +101,7 @@ PM_START_TEXT = """
 ◎ *Uptime:* `{}`
 ◎ `{}` *users, across* `{}` *chats.*
 ➖➖➖➖➖➖➖➖➖➖➖◎
-◎ Try The Help Buttons Below To Know My Abilities[.](https://telegra.ph/file/852e96d6c59f2ccad32df.jpg) ××
+◎ Try The Help Buttons Below To Know My Abilities[.]() ××
 """
 
 GROUP_START_TEXT = """
@@ -434,7 +434,7 @@ def get_help(update, context):
     if chat.type != chat.PRIVATE:
 
         update.effective_message.reply_photo(
-            HELP_IMG, HELP_MSG,
+            HELP_IMG, test,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
