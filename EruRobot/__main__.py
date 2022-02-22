@@ -116,7 +116,7 @@ buttons = [
                             url=f"t.me/?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="[•Help•]", callback_data="help_back"),
+                       InlineKeyboardButton(text="[•Help•]", callback_data="get_help"),
                      ],
                     [                  
                        InlineKeyboardButton(
@@ -434,7 +434,7 @@ def get_help(update, context):
     if chat.type != chat.PRIVATE:
 
         update.effective_message.reply_photo(
-            HELP_IMG, test,
+            HELP_IMG, Click below to see commands,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
