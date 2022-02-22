@@ -448,7 +448,7 @@ def siesta_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-elif query.data == "eru_admin":
+    elif query.data == "eru_admin":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_admin_text"),
             parse_mode=ParseMode.MARKDOWN,
