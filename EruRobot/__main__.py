@@ -254,7 +254,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_animation(
-            GROUP_START_IMG, caption= "Lets go! To a book a OYO!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            GROUP_START_IMG, caption= "Hello I am chitanda ready to help!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -434,7 +434,7 @@ def get_help(update, context):
     if chat.type != chat.PRIVATE:
 
         update.effective_message.reply_photo(
-            HELP_IMG, Click below to see commands,
+            HELP_IMG, caption= "Click below to see commands",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
