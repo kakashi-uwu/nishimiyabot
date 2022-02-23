@@ -115,7 +115,7 @@ buttons = [
                             url=f"t.me/?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="•Help•", callback_data="help_back"),
+                       InlineKeyboardButton(text="•Help•", callback_data="help"),
                      ],
                     [                  
                        InlineKeyboardButton(
