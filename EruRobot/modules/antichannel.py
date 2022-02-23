@@ -4,7 +4,7 @@ from telegram.ext.filters import Filters
 from telegram import Update, message, ParseMode
 from telegram.ext import CallbackContext
 
-from EruRobot.modules.helper_funcs.decorators import siestacmd, siestamsg
+from EruRobot.modules.helper_funcs.decorators import erucmd, erumsg
 from EruRobot.modules.helper_funcs.channel_mode import user_admin, AdminPerms
 from EruRobot.modules.sql.antichannel_sql import antichannel_status, disable_antichannel, enable_antichannel
 from EruRobot.modules.language import gs
