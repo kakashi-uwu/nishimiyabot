@@ -15,7 +15,7 @@ from telegram import(
 from telegram.ext import CallbackContext
 
 from EruRobot import DEV_USERS, ERROR_LOGS, dispatcher
-from EruRobot.modules.helper_funcs.decorators import siestacmd
+from EruRobot.modules.helper_funcs.decorators import erucmd
 
 pretty_errors.mono()
 
@@ -110,7 +110,7 @@ def error_callback(update: Update, context: CallbackContext):
         url = f"https://spaceb.in/{response['payload']['id']}"
         context.bot.send_message(
             ERROR_LOGS,
-            text=f"#{context.error.identifier}\n<b>Darling, i have an Error :"
+            text=f"#{context.error.identifier}\n<b>Senpai  I have an Error Help me :"
             f"</b>\n<code>{e}</code>",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Check The Error Senpai!", url=url)]],
@@ -134,7 +134,7 @@ def list_errors(update: Update, context: CallbackContext):
         context.bot.send_document(
             update.effective_chat.id,
             open("errors_msg.txt", "rb"),
-            caption="Too many errors have occured..",
+            caption="Too many errors have occured help me...",
             parse_mode="html",
         )
         return
