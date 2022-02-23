@@ -95,13 +95,13 @@ START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
 ────「 {} 」────
-*Hey! {},*
-* I am an Anime themed advance group management bot with a lots of Features.*
-➖➖➖➖➖➖➖➖➖➖➖◎
-◎ *Uptime:* `{}`
-◎ `{}` *users, across* `{}` *chats.*
-➖➖➖➖➖➖➖➖➖➖➖◎
-◎ Try The Help Buttons Below To Know My Abilities[.]() ××
+*× oi! {} San*
+*× Iᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, ʏᴏᴜ ᴄᴀɴ ᴄᴀʟʟ ᴍᴇ ᴇʀᴜ.I'ʟʟ ᴀssɪsᴛ ʏᴏᴜ ғʀᴏᴍ ɴᴏᴡ ᴏɴ*
+────────────────────────
+×  *Uᴘᴛɪᴍᴇ:* `{}`
+×  `{}` *ᴜsᴇʀs, ᴀᴄʀᴏss* `{}` *ᴄʜᴀᴛs.*
+────────────────────────
+× Tʀʏ Tʜᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ ᴏʀ ʜɪᴛ /help ᴛᴏ ᴀᴄᴄᴇss ᴍʏ ᴀʙɪʟɪᴛɪᴇs[.]() ××
 """
 
 GROUP_START_TEXT = """
