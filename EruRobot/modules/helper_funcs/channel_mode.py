@@ -7,7 +7,7 @@ from telegram.inline.inlinekeyboardbutton import InlineKeyboardButton
 from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 
 from EruRobot import DRAGONS, DEV_USERS, dispatcher
-from EruRobot.modules.helper_funcs.decorators import siestacallback
+from EruRobot.modules.helper_funcs.decorators import erucallback
 
 
 class AdminPerms(Enum):
@@ -61,7 +61,7 @@ def user_admin(permission: AdminPerms):
     return wrapper
 
 
-@siestacallback(pattern="anoncb")
+@erucallback(pattern="anoncb")
 def anon_callback_handler1(upd: Update, _: CallbackContext):
     callback = upd.callback_query
     perm = callback.data.split('/')[3]
