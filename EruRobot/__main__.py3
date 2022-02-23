@@ -62,7 +62,7 @@ from EruRobot.modules.language import gs
     
     
 HELP_MSG = "Click the button below to get help menu in your pm."
-START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+START_MSG = "I'm  awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
 
 def get_readable_time(seconds: int) -> str:
     count = 0
