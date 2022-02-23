@@ -433,7 +433,7 @@ def get_help(update, context):
     if chat.type != chat.PRIVATE:
 
         update.effective_message.reply_photo(
-            HELP_IMG, caption= "Click below to see commands",
+            ERU_PHOTO, caption= "Click below to see commands",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
