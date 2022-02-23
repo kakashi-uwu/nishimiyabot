@@ -61,9 +61,9 @@ from EruRobot.modules.language import gs
 
     
     
-GROUP_START_IMG = ""
+GROUP_START_IMG = "https://telegra.ph/file/2ec5468cee429a5a313cd.mp4"
 
-ERU_PHOTO = ""
+ERU_PHOTO = "https://telegra.ph/file/9d134fb43772e7eb6105d.mp4"
 
 
 def get_readable_time(seconds: int) -> str:
