@@ -101,7 +101,7 @@ def error_callback(update: Update, context: CallbackContext):
             context.bot.send_document(
                 ERROR_LOGS,
                 open("error.txt", "rb"),
-                caption=f"#{context.error.identifier}\n<b>Darling, i have an Error :"
+                caption=f"#{context.error.identifier}\n<b>Senpai  I have an Error Help me :"
                 f"</b>\n<code>{e}</code>",
                 parse_mode="html",
             )
@@ -113,13 +113,13 @@ def error_callback(update: Update, context: CallbackContext):
             text=f"#{context.error.identifier}\n<b>Darling, i have an Error :"
             f"</b>\n<code>{e}</code>",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("See The Error Darling!", url=url)]],
+                [[InlineKeyboardButton("Check The Error Senpai!", url=url)]],
             ),
             parse_mode=ParseMode.HTML,
         )
 
 
-@siestacmd(command="errors")
+@erucmd(command="errors")
 def list_errors(update: Update, context: CallbackContext):
     if update.effective_user.id not in DEV_USERS:
         return
