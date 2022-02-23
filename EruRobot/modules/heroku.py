@@ -180,7 +180,7 @@ async def _(dyno):
         return await dyno.reply(
             " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku"
         )
-    v = await dyno.reply("Getting Logs....")
+    v = await dyno.reply("Loggin in in heroku and getting logs....")
     with open("logs.txt", "w") as log:
         log.write(app.get_log())
     await v.edit("Got the logs wait a sec")
@@ -188,7 +188,7 @@ async def _(dyno):
         dyno.chat_id,
         "logs.txt",
         reply_to=dyno.id,
-        caption="Siesta logs.",
+        caption="Eru logs.",
     )
 
     await asyncio.sleep(5)
