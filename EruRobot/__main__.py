@@ -84,7 +84,6 @@ def get_readable_time(seconds: int) -> str:
 
 
 ERU_IMG = "https://telegra.ph/file/2078b5f22f4af062fb3fb.jpg"
-ERU_IMG = "https://telegra.ph/file/9815ea7c4ecc4c43425b6.mp4"
 DONATE_STRING = """✌️I'm free for everyone ✌️"""
 
 IMPORTED = {}
@@ -196,10 +195,7 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_video(
-                ERU_IMG,
-                timeout=60,
-            )
+ 
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 text=gs(chat.id, "pm_start_text").format(
