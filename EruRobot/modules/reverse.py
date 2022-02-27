@@ -182,7 +182,7 @@ def scam(imgspage, lim):
 
 __help__ = """
 ➢ `/reverse`*:* reply to any image or sticker to get results"""
-__mod_name__ = "「reverse」"
+__mod_name__ = "「REVERSE」"
 
 REVERSE_HANDLER = DisableAbleCommandHandler(
     ["reverse", "grs" , "p"], reverse, pass_args=True, admin_ok=True
