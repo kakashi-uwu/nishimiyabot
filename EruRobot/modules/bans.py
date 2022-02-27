@@ -575,8 +575,13 @@ def snipe(update: Update, context: CallbackContext):
 def helps(chat):
     return gs(chat, "bansmutes_help")
 
-
-__mod_name__ = "Bans/Mutes"
+__help__ = """
+➢ `/ban`*:* to ban a user via username or I'd
+➢ `/tban`*:* to ban user for temporary period [time limit]
+➢ `/unban`*:* to unban any user
+➢ `/mute`*:* mute users via username or I'd
+➢ `/unmute`*:* I shall allow this morn to chat freely"""
+__mod_name__ = "「BANS & MUTES」"
 
 BAN_HANDLER = CommandHandler(["ban", "sban"], ban, run_async=True)
 TEMPBAN_HANDLER = CommandHandler(["tban"], temp_ban, run_async=True)
