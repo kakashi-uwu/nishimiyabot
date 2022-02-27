@@ -402,7 +402,10 @@ def connect_button(update, context):
 def helps(chat):
     return gs(chat, "connection_help")
 
-__mod_name__ = "Connection"
+__help__ = """
+➢ `/connect`*:* id to connect to group
+➢ `/disconnect`*:* id to diconnect from group"""
+__mod_name__ = "「CONNECTIONS」"
 
 CONNECT_CHAT_HANDLER = CommandHandler(
     "connect", connect_chat, pass_args=True, run_async=True
