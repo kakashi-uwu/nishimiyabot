@@ -458,7 +458,7 @@ __help__ = """
 ➢ `/removeblacklist`*:* removes any word out of your blacklist
 ➢ `/addblsticker`*:* use this command to add stickers to blacklist
 ➢ `/rmblsticker`*:* use this command to remove stickers from blacklist"""
-__mod_name__ = "「BLACKLISTS」"
+__mod_name__ = "ʙʟᴀᴄᴋʟɪsᴛs"
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
     "blacklist",
