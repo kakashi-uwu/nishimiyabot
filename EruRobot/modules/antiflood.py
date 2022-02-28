@@ -402,8 +402,8 @@ def helps(chat):
     return gs(chat, "antiflood_help")
 
 __help__ = """
-/Antiflood [on/off] : controls flood and spam"""
-__mod_name__ = "Anti-Flood"
+➢ `/antiflood`*:* [on/off] for avoiding spams and floods"""
+__mod_name__ = "「ANTI-FLOOD」"
 
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.chat_type.groups,
