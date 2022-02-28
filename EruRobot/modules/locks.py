@@ -544,7 +544,7 @@ __help__ = """
 ➢ `/unlock all`*:* unlock all the members 
 ➢ `/lock`*:* choose one option from locktypes
 ➢ `/unlock`*:* choose one option from locktypes"""
-__mod_name__ = "「LOCKS」" 
+__mod_name__ = "Lᴏᴄᴋs" 
 
 LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes, run_async=True)
 LOCK_HANDLER = CommandHandler(
