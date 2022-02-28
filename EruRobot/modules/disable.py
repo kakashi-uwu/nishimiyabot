@@ -346,7 +346,7 @@ __help__ = """
 ➢ `/enable`*:* <command name> will enable commmands
 ➢ `/listcmds`*:* will show a list of all commmands in a raw
 ➢ `/cmds`* get available commmands list"""
-    __mod_name__ = "disabling"
+    __mod_name__ = "Disabling"
 
 else:
     DisableAbleCommandHandler = CommandHandler
