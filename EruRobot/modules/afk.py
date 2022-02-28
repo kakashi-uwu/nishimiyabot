@@ -162,7 +162,7 @@ dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
 __help__ = """
 ➢ `/afk`*:* for away from keyboard"""
-__mod_name__ = "「AFK」"
+__mod_name__ = "Aғᴋ"
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),
