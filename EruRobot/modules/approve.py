@@ -212,6 +212,9 @@ dispatcher.add_handler(APPROVAL)
 dispatcher.add_handler(UNAPPROVEALL)
 dispatcher.add_handler(UNAPPROVEALL_BTN)
 
+__help__ = """
+➢ `/approve`*:* the user will not be blocked by antiflood,locks,etc
+➢ `/unapprove`*:* the user will ne unapproved and will be blocked by antiflood, locks,etc"""
 __mod_name__ = "Approvals"
 __command_list__ = ["approve", "unapprove", "approved", "approval"]
 __handlers__ = [APPROVE, DISAPPROVE, APPROVED, APPROVAL]
