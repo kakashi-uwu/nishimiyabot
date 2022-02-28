@@ -403,7 +403,7 @@ def helps(chat):
 
 __help__ = """
 ➢ `/antiflood`*:* [on/off] for avoiding spams and floods"""
-__mod_name__ = "「ANTI-FLOOD」"
+__mod_name__ = "ᴀɴᴛɪ-ғʟᴏᴏᴅ"
 
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.chat_type.groups,
