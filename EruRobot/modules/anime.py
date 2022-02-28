@@ -577,7 +577,7 @@ dispatcher.add_handler(UPCOMING_HANDLER)
 
 __help__ = """
 ➢ `/anime`*:* <anime name > for anime results of you query"""
-__mod_name__ = "「ANIME」"
+__mod_name__ = "Aɴɪᴍᴇ"
 __command_list__ = [
     "anime", "manga", "character", "user", "upcoming", "kaizoku", "airing",
     "kayo"
