@@ -11,7 +11,7 @@ from EruRobot.utils.filter_groups import nsfw_detect_group
 
 __help__ = """
 ➢ `/antinsfw`*:* [on/off] will protect your group from being ruined by nsfw content"""
-__mod_name__ = "「ANTI-NSFW」"
+__mod_name__ = "ᴀɴᴛɪ-ɴsғᴡ"
 
 async def get_file_id_from_message(message):
     file_id = None
