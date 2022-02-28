@@ -482,7 +482,7 @@ __help__ = """
 ➢ `/latin`*:* <text> to get latin text
 ➢ `/lined`*:* <text> to get line text
 ➢ `/fsquare`*:* <text> to fsquare text"""
-__mod_name__ = "「💝STYLETEXT💝」"
+__mod_name__ = "「💝Sᴛʏʟᴇᴛᴇxᴛ💝」"
 
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, run_async=True)
 BUBBLE_HANDLER = DisableAbleCommandHandler("bubble", bubble, run_async=True)
