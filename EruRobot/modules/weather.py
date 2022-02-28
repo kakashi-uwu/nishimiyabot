@@ -87,3 +87,13 @@ async def _(event):
         response_api = await response_api_zero.read()
         with io.BytesIO(response_api) as out_file:
             await event.reply(file=out_file)
+
+__help__ = """
+➢ `/weather`*:* <region> for weather, location, temperature,etc.
+
+
+× for example: /weather<region> for results
+
+
+       *Powered by eru sama*"""
+__mod_name__ = "「WEATHER」"
