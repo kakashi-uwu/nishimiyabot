@@ -188,7 +188,12 @@ def manga(update: Update, context: CallbackContext):
         )
 
 
-__mod_name__ = "MyAnimeList"
+__help__ = """
+➢ `/mcharacter`*:* <character name> to search a character
+➢ `/manime`*:* <anime name >  for results 
+➢ `/mmanga`*:* <manga name > for results
+➢ `/mupcoming`*:* for upcoming animes"""
+__mod_name__ = "「�MYANIMELIST�」"
 
 
 ANIME_HANDLER = CommandHandler("manime", anime, pass_args=True, run_async=True)
