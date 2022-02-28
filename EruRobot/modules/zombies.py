@@ -99,4 +99,4 @@ async def rm_deletedacc(show):
 __help__ = """
 ➢ `/zombies`*:* to get the info of deleted accounts in group
 ➢ `/zombies clean`*:* clean the zombies or deleted accounts"""
-__mod_name__ = "「ZOMBIES」"
+__mod_name__ = "Zᴏᴍʙɪᴇs"
