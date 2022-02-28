@@ -1297,7 +1297,18 @@ dispatcher.add_handler(BUTTON_VERIFY_HANDLER)
 dispatcher.add_handler(WELCOME_MUTE_HELP)
 dispatcher.add_handler(CAPTCHA_BUTTON_VERIFY_HANDLER)
 
-__mod_name__ = "Greetings"
+__help__ = """
+➢ `/welcomehelp`*:* help for setting welcomes 
+➢ `/welcomemutehelp`*:* help for welcome mute
+➢ `/welcome`*:* shows the current welcome Interfase
+➢ `/setwelcome`*:* can be used to set welcome messages or media
+➢ `/goodbye`*:* shows the current goodbye Interfase
+➢ `/setgoodbye`*:* can be used to set goodbye as messages or media
+➢ `/cleanservice`*:* turns on/off the clean service function
+➢ `/resetwelcome`*:* resets the welcome note 
+➢ `/resetgoodbye`*:* resets the goodbye message
+➢ `/welcomemute`*:* can be used to mute welcome"""
+__mod_name__ = "「GREETINGS」"
 __command_list__ = []
 __handlers__ = [
     NEW_MEM_HANDLER,
