@@ -382,7 +382,7 @@ __help__ = """
 
 *Powered by EruRobot backup system*
 """
-__mod_name__ = "「BACKUPS」"
+__mod_name__ = "ʙᴀᴄᴋᴜᴘs"
 
 IMPORT_HANDLER = CommandHandler("import", import_data, run_async=True)
 EXPORT_HANDLER = CommandHandler(
