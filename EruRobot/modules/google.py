@@ -269,7 +269,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> Enmu <==="
+        app_details += ""
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
@@ -281,4 +281,6 @@ def helps(chat):
     return gs(chat, "search_help")
 
 
-__mod_name__ = "Search"
+__help__ = """
+➢ `/app`*:* <app name> for appraisal result for any app """
+__mod_name__ = "「SEARCH」"
