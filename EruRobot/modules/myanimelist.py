@@ -193,7 +193,7 @@ __help__ = """
 ➢ `/manime`*:* <anime name >  for results 
 ➢ `/mmanga`*:* <manga name > for results
 ➢ `/mupcoming`*:* for upcoming animes"""
-__mod_name__ = "「�MYANIMELIST�」"
+__mod_name__ = "「💝MYANIMELIST💝」"
 
 
 ANIME_HANDLER = CommandHandler("manime", anime, pass_args=True, run_async=True)
