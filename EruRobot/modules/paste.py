@@ -18,7 +18,7 @@ __help__ = """
 × This function is only used for pasting docs as url 
 
 × Powered by  eru sama"""
-__mod_name__ = "「PASTE」​"
+__mod_name__ = "Pᴀsᴛᴇ"
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
