@@ -116,4 +116,8 @@ file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
-__mod_name__ = "Telegraph"
+__help__ = """
+➢ `/tgm`*:* to get url of any photo, gif or video
+➢ `/tm`*:* to get url of any media
+➢ `/tgt`*:* get url of any text"""
+__mod_name__ = "「TELEGRAPH」"
