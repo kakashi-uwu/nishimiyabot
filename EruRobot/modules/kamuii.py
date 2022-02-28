@@ -69,4 +69,4 @@ async def _(fry):
 
 __help__ = """
 ➢ `/kamuii`*:* reply to any sticker ko deepfry it"""
-__mod_name__ = "「💖KAMUII💖」"
+__mod_name__ = "💖Kᴀᴍᴜɪɪ💖"
