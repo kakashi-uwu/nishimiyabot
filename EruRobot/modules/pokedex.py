@@ -45,6 +45,5 @@ async def PokeDex(_, message):
     await message.reply_photo(photo=poke_img, caption=caption)
 
 __help__ = """
-➢ `/pokedex`*:* <Pokemon name> for Pokemon info
-➢ `/rmnsfw`*:* disableds nsfw mode"""
+➢ `/pokedex`*:* <Pokemon name> for Pokemon info"""
 __mod_name__ = "「POKEDEX」"
