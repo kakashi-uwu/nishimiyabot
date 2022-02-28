@@ -99,4 +99,4 @@ def is_gif(file):
 
 __help__ = """
 ➢ `/whatanime`*:* reply to any gif or video to know the anime name"""
-__mod_name__ = "「WHAT-ANIME」"
+__mod_name__ = "Wʜᴀᴛ-ᴀɴɪᴍᴇ "
