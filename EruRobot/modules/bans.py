@@ -581,7 +581,7 @@ __help__ = """
 ➢ `/unban`*:* to unban any user
 ➢ `/mute`*:* mute users via username or I'd
 ➢ `/unmute`*:* I shall allow this morn to chat freely"""
-__mod_name__ = "「BANS & MUTES」"
+__mod_name__ = "Bᴀɴs & ᴍᴜᴛᴇs"
 
 BAN_HANDLER = CommandHandler(["ban", "sban"], ban, run_async=True)
 TEMPBAN_HANDLER = CommandHandler(["tban"], temp_ban, run_async=True)
