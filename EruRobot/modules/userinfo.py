@@ -599,7 +599,7 @@ __help__ = """
 ➢ `/gifid`*:* gets the I'd of gif
 ➢ `/me`*:* to know "about me" 
 ➢ `/cinfo`*:* fetches the information of any chat via I'd or username"""
-__mod_name__ = "「INFO」"
+__mod_name__ = "Iɴғᴏ"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
