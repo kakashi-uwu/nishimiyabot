@@ -283,4 +283,4 @@ def helps(chat):
 
 __help__ = """
 ➢ `/app`*:* <app name> for appraisal result for any app """
-__mod_name__ = "「SEARCH」"
+__mod_name__ = "Sᴇᴀʀᴄʜ"
