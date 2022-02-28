@@ -45,4 +45,4 @@ __help__ = """
 × for example: /mentionall<text>
 
       *Powered by eru sama*"""
-__mod_name__ = "「TAGGER」"
+__mod_name__ = "Tᴀɢɢᴇʀ"
