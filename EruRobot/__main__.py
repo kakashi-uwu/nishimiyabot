@@ -72,6 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+GROUP_START_IMG = "https://telegra.ph/file/1e4d6b17fd9dcb6d36dba.mp4"
 
 PM_START_TEXT = """
 × ʜᴇʟʟᴏ [×](https://telegra.ph/file/9815ea7c4ecc4c43425b6.mp4), ɪᴍ eru ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
@@ -215,11 +216,33 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+        update.effective_message.reply_animation(
+            GROUP_START_IMG,
+            caption="<code> oi baka I'm eru \nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/eruXsupport"
+                        )
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ᴜᴘᴅᴀᴛᴇs",
+                            url="https://telegram.dog/eruxupdates",
+                        )
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            text="Aᴄᴀᴅᴇᴍʏ",
+                            url="https://telegram.dog/theacademy_official",
+                        )
+                    ],
+                ]
+            ),
         )
 
 
