@@ -131,4 +131,4 @@ async def close_send_photo(_, CallbackQuery):
 
 __help__ = """
 ➢ `/bug`*:* <bug name> will report the bug to our support staff"""
-__mod_name__ = "「BUG」"
+__mod_name__ = "ʙᴜɢ"
