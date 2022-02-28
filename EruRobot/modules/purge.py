@@ -86,6 +86,6 @@ telethn.add_event_handler(*DEL_HANDLER)
 __help__ = """
 ➢ `/del`*:* reply to any text or media to delete them 
 ➢ `/purge`*:* to delete multiple messages ad purge"""
-__mod_name__ = "「PURGES」"
+__mod_name__ = "Pᴜʀɢᴇs"
 __command_list__ = ["del", "purge"]
 __handlers__ = [PURGE_HANDLER, DEL_HANDLER]
