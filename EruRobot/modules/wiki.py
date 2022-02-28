@@ -59,4 +59,4 @@ __help__ = """
 
 × this function allows you to get results over the web
 × for example: /wiki India"""
-__mod_name__ = "「WIKI」"
+__mod_name__ = "Wɪᴋɪ"
