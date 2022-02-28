@@ -22,5 +22,14 @@ UD_HANDLER = DisableAbleCommandHandler(["ud"], ud, run_async=True)
 
 dispatcher.add_handler(UD_HANDLER)
 
+__help__ = """
+➢ `/ud`*:* <query> to get meaning via urban dictionary
+
+
+For example: /ud baby
+
+
+     *Powered by eru sama*"""
+__mod_name__ = "「DICTIONARY」"
 __command_list__ = ["ud"]
 __handlers__ = [UD_HANDLER]
