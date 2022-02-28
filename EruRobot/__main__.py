@@ -226,19 +226,19 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/eruXsupport"
+                            text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/eruXsupport"
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs",
+                            text="Uᴘᴅᴀᴛᴇs",
                             url="https://telegram.dog/eruxupdates",
                         )
                     ],
                                         [
                         InlineKeyboardButton(
-                            text="Aᴄᴀᴅᴇᴍʏ",
-                            url="https://telegram.dog/theacademy_official",
+                            text="💝 Bᴀʙʏ 💝",
+                            url="https://t.me/baby_hoii",
                         )
                     ],
                 ]
