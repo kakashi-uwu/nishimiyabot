@@ -701,7 +701,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""** aiyo!**""",
+                f"""**[oi baka I'm back.](https://telegra.ph/file/66ef3da75dbf0915b7a9d.mp4)**""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
