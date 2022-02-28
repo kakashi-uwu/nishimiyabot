@@ -184,4 +184,4 @@ __help__ = """
 ➢ `/up`*:* to upload files or media
 ➢ `/tmpninja`*:* to upload file to tmp 
 ➢ `/transfersh`*:* to upload file to transfersh"""
-__mod_name__ = "「UPLOAD」"
+__mod_name__ = "Uᴘʟᴏᴀᴅ"
