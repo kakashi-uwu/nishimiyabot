@@ -6,4 +6,4 @@ def helps(chat):
 
 __help__ = """
 ➢ `TOOLS`*:* Here are some useful tools"""
-__mod_name__ = "「TOOLS」"
+__mod_name__ = "Tᴏᴏʟs"
