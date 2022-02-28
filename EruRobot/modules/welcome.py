@@ -1308,7 +1308,7 @@ __help__ = """
 ➢ `/resetwelcome`*:* resets the welcome note 
 ➢ `/resetgoodbye`*:* resets the goodbye message
 ➢ `/welcomemute`*:* can be used to mute welcome"""
-__mod_name__ = "「GREETINGS」"
+__mod_name__ = "ɢʀᴇᴇᴛɪɴɢs"
 __command_list__ = []
 __handlers__ = [
     NEW_MEM_HANDLER,
