@@ -2411,7 +2411,7 @@ __help__ = """
 
 
   *Powered by eru sama*"""
-__mod_name__ = "「FEDERATIONS」"
+__mod_name__ = "Fᴇᴅᴇʀᴀᴛɪᴏɴs"
 
 
 
