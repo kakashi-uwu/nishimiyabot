@@ -189,4 +189,4 @@ __help__ = """
 
 
     *Powered by eru sama*"""
-__mod_name__ = "「F-SUB/FEDS」"
+__mod_name__ = "F-sᴜʙs/ғᴇᴅ"
