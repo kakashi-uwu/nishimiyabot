@@ -883,7 +883,13 @@ dispatcher.add_handler(DEMOTE_HANDLER)
 dispatcher.add_handler(SET_TITLE_HANDLER)
 dispatcher.add_handler(ADMIN_REFRESH_HANDLER)
 
-__mod_name__ = "Admins"
+__help__ = """
+➢ `/promote`*:* to promote any member to admin
+➢ `/lowpromote`*:* low promote any user
+➢ `/midpromote`*:* mid promote any users
+➢ `/fullpromote`*:* promote user in group with full rights
+➢ `/demote`*:* to demote admins to normal user"""
+__mod_name__ = "「ADMINS」"
 __command_list__ = [
     "setdesc"
     "setsticker"
