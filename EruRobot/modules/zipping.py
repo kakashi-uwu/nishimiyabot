@@ -207,3 +207,8 @@ def get_lst_of_files(input_directory, output_lst):
             return get_lst_of_files(current_file_name, output_lst)
         output_lst.append(current_file_name)
     return output_lst
+
+__help__ = """
+➢ `/zip`*:* reply to any file to compress it
+➢ `/unzip`*:* reply to any file for de-compressing of unziping"""
+__mod_name__ = "「ZIPPING」"
