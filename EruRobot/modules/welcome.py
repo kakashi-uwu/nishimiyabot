@@ -200,7 +200,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    f"hey  welcome to {html.escape(chat.title)} my baby.("https://telegra.ph/file/be15de05bff7012c43279.jpg"), reply_to_message_id=reply
+                    f"hey  welcome to {html.escape(chat.title)} my baby", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
