@@ -2383,7 +2383,36 @@ def fed_user_help(update: Update, context: CallbackContext):
     )
 
 
-__mod_name__ = "Federations"
+__help__ = """
+➢ `/leavefed`*:* leave federation
+➢ `/fpromote`*:* promote users across federation
+➢ `/fdemote`*:* demote users across federation
+➢ `/fedinfo`*:* to get effective federation info
+➢ `/fban`*:* to ban users across federation
+➢ `/unfban`*:* to unban users across federation
+➢ `/fbroadcast`*:* to broadcast across the federation
+➢ `/setfrules`*:* to set federation rules
+➢ `/frules`*:* to see the federation rules
+➢ `/chatfed`*:* for chat fed 
+➢ `/fadmins`*:* to get the list of federation admins
+➢ `/fbanlist`*:* for fetching federation banned users list
+➢ `/fednotif`*:* for fed notif
+➢ `/fedchats`*:* for fed chats  
+➢ `/importfbans`*:* to import federation bans 
+➢ `/setfedlog`*:* to set fed log 
+➢ `/unsetfedlog`*:* to remove set log of a federation
+➢ `/subfed`*:* for sub federation 
+➢ `/unsubfed`*:* for unsub federation
+➢ `/fedsubs`*:* for fed subs 
+➢ `/myfeds`*:* to see you feds list
+➢ `/rmfed`*:* to remove fed
+
+× some of the commands are mentioned in [f-subs/feds] module of eru sama
+
+
+  *Powered by eru sama*"""
+__mod_name__ = "「FEDERATIONS」"
+
 
 
 NEW_FED_HANDLER = CommandHandler("newfed", new_fed, run_async=True)
