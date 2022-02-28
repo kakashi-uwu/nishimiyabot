@@ -539,7 +539,12 @@ def __chat_settings__(chat_id, user_id):
 def helps(chat):
     return gs(chat, "locks_help")
 
-__mod_name__ = "Locks"
+__help__ = """
+➢ `/lock all`*:* locks all the non admins
+➢ `/unlock all`*:* unlock all the members 
+➢ `/lock`*:* choose one option from locktypes
+➢ `/unlock`*:* choose one option from locktypes"""
+__mod_name__ = "「LOCKS」" 
 
 LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes, run_async=True)
 LOCK_HANDLER = CommandHandler(
