@@ -143,7 +143,7 @@ Chatbot utilizes the Kuki's api which allows Kuki to talk and provide a more int
 *Powered by ItelAi*
 """
 
-__mod_name__ = "「CHATBOT」"
+__mod_name__ = "「Cʜᴀᴛʙᴏᴛ」"
 
 
 CHATBOTK_HANDLER = CommandHandler("chatbot",kuki, run_async=True)
