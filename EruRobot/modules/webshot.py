@@ -1,6 +1,6 @@
 """
 MIT License
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Baby-kun
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -23,7 +23,15 @@ from pyrogram.types import Message
 from EruRobot import pbot as app
 from EruRobot.utils.errors import capture_err
 
-__mod_name__ = "Webshot​"
+__help__ = """
+➢ `/webss`*:* <url> to get screen shot of any website
+
+× this module is used for fetching ss from a website
+
+× for example : /webss <url>
+
+     *powered by eru sama*"""
+__mod_name__ = "「WEEB-SHOOT」"
 
 
 @app.on_message(filters.command("webss"))
