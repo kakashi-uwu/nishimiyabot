@@ -179,3 +179,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+__help__ = """
+➢ `/up`*:* to upload files or media
+➢ `/tmpninja`*:* to upload file to tmp 
+➢ `/transfersh`*:* to upload file to transfersh"""
+__mod_name__ = "「UPLOAD」"
