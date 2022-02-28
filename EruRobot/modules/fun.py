@@ -351,7 +351,7 @@ __help__ = """
 ➢ `/roll`*:* get random numbers by rolling dice 
 ➢ `/shrug`*:* will show shrug text
 ➢ `/weebify`*:* <text> to weebify text"""
-__mod_name__ = "「FUN」"
+__mod_name__ = "ғᴜɴ"
 __command_list__ = [
     "runs",
     "slap",
