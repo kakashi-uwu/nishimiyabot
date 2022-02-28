@@ -34,4 +34,15 @@ async def _(event):
     await event.delete()
 
 
-__mod_name__ = "Tagger"
+__help__ = """
+➢ `/all`*:* give a text or reply to any media or text
+➢ `/tagall`*:* tags all the members at once
+➢ `/mentionall`*:* mention all with some text or media
+
+
+× for example: /all <TEXT>
+× for example: /tagall 
+× for example: /mentionall<text>
+
+      *Powered by eru sama*"""
+__mod_name__ = "「TAGGER」"
