@@ -260,4 +260,4 @@ __help__ = """
 ➢ `/vgunmute`*:* unmute the music assistant on vc 
 ➢ `/playlist`*:* to check the playlist
 ➢ `/song`*:* <song name > to get the song as a download"""
-__mod_name__ = "「MUSIC」"
+__mod_name__ = "Mᴜsɪᴄ"
