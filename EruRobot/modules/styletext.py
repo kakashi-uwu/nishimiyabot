@@ -473,7 +473,16 @@ def lined(update, context):
     else:
         message.reply_text(string)
 
-__mod_name__ = "Styletext"
+__help__ = """
+➢ `/square`*:* <text> to square text
+➢ `/fbubble`*:* <text> for fbubble text 
+➢ `/bubble`*:* <text> to bubble text 
+➢ `/weebify`*:* <text> to weebify text
+➢ `/blue`*:* <text> to blue text
+➢ `/latin`*:* <text> to get latin text
+➢ `/lined`*:* <text> to get line text
+➢ `/fsquare`*:* <text> to fsquare text"""
+__mod_name__ = "「💝STYLETEXT💝」"
 
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, run_async=True)
 BUBBLE_HANDLER = DisableAbleCommandHandler("bubble", bubble, run_async=True)
