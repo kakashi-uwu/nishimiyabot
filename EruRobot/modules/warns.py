@@ -494,7 +494,15 @@ def helps(chat):
     return gs(chat, "warns_help")
 
 
-__mod_name__ = "Warning"
+__help__ = """
+➢ `/warn`*:* warns user for inappropriate behaviour
+➢ `/dwarn`*:* warns the users and deletes the message or media 
+➢ `/addwarn`*:* adds a warn to the user's warnlist
+➢ `/nowarn`*:* remove all warns 
+➢ `/resetwarn`*:* reset the warns
+➢ `/warnlist`*:* shows the number of warns of a user
+➢ `/removewarn`*:* removes a warn for the user"""
+__mod_name__ = "「WARNING」"
 
 WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.chat_type.groups, run_async=True)
 RESET_WARN_HANDLER = CommandHandler(
