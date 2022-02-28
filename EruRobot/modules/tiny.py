@@ -80,4 +80,4 @@ async def _(event):
 
 __help__ = """
 ➢ `/tiny`*:* reply to any sticker or png to tiny it"""
-__mod_name__ = "「TINY」"
+__mod_name__ = "Tɪɴʏ"
