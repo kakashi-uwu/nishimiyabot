@@ -376,7 +376,13 @@ def get_chat(chat_id, chat_data):
         return {"status": False, "value": False}
 
 
-__mod_name__ = "Backups"
+__help__ = """
+➢ `/import`*:* to import data for backups
+➢ `/export`*:* to migrate backup data
+
+*Powered by EruRobot backup system*
+"""
+__mod_name__ = "「BACKUPS」"
 
 IMPORT_HANDLER = CommandHandler("import", import_data, run_async=True)
 EXPORT_HANDLER = CommandHandler(
