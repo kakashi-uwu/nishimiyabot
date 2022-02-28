@@ -250,3 +250,14 @@ async def lyrics_func(_, message):
         return await m.edit(f"**__{lyrics}__**")
     lyrics = await paste(lyrics)
     await m.edit(f"**LYRICS_TOO_LONG:** [URL]({lyrics})")
+
+__help__ = """
+➢ `/mstart`*:* to see the music module info
+➢ `/play`*:* to play songs on vc 
+➢ `/end`*:* end the current playlist
+➢ `/skip`*:* will skip the qued songs
+➢ `/vgmute`*:* mute the music assistant on vc
+➢ `/vgunmute`*:* unmute the music assistant on vc 
+➢ `/playlist`*:* to check the playlist
+➢ `/song`*:* <song name > to get the song as a download"""
+__mod_name__ = "「MUSIC」"
