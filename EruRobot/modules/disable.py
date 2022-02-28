@@ -341,11 +341,6 @@ if is_module_loaded(FILENAME):
     dispatcher.add_handler(TOGGLE_HANDLER)
 
 
-__help__ = """
-➢ `/disable`*:* <command name > will disable the use of commmands
-➢ `/enable`*:* <command name> will enable commmands
-➢ `/listcmds`*:* will show a list of all commmands in a raw
-➢ `/cmds`* get available commmands list"""
     __mod_name__ = "Disabling"
 
 else:
