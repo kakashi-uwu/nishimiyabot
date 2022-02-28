@@ -97,4 +97,4 @@ async def quotess(qotli):
 __help__ = """
 ➢ `/sg`*:* to gather info of users previous names 
 ➢ `/quotly`*:* to convert text to stic"""
-__mod_name__ = "「SANGMATA」"
+__mod_name__ = "Sᴀɴɢᴍᴀᴛᴀ"
