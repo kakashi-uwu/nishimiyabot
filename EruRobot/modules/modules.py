@@ -184,4 +184,8 @@ dispatcher.add_handler(LOAD_HANDLER)
 dispatcher.add_handler(UNLOAD_HANDLER)
 dispatcher.add_handler(LISTMODULES_HANDLER)
 
-__mod_name__ = "Modules"
+__help__ = """
+➢ `/unload`*:* <module name> to unload any module
+➢ `/listmodules`*:* to get the list of all modules
+➢ `/load`*:* <module name> to load module"""
+__mod_name__ = "「MODULES」"
