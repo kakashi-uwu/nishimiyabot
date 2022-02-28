@@ -31,7 +31,7 @@ __help__ = """
 × for example : /webss <url>
 
      *powered by eru sama*"""
-__mod_name__ = "「WEEB-SHOOT」"
+__mod_name__ = "Wᴇʙ-sʜᴏᴛ"
 
 
 @app.on_message(filters.command("webss"))
