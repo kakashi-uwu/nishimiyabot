@@ -454,4 +454,4 @@ __help__ = """
 ➢ `/edit`*:* reply to any image to edit it ....
 The pannel will appear once you use this command
 """
-__mod_name__ = "「IMG EDIT」"
+__mod_name__ = "ɪᴍɢ-ᴇᴅɪᴛ"
