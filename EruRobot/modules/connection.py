@@ -405,7 +405,7 @@ def helps(chat):
 __help__ = """
 ➢ `/connect`*:* id to connect to group
 ➢ `/disconnect`*:* id to diconnect from group"""
-__mod_name__ = "「CONNECTIONS」"
+__mod_name__ = "Cᴏɴɴᴇᴄᴛɪᴏɴs"
 
 CONNECT_CHAT_HANDLER = CommandHandler(
     "connect", connect_chat, pass_args=True, run_async=True
