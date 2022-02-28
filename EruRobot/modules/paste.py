@@ -12,7 +12,13 @@ from EruRobot import pbot as app
 from EruRobot.utils.errors import capture_err
 from EruRobot.utils.pastebin import paste
 
-__mod_name__ = "Paste​"
+__help__ = """
+➢ `/paste`*:* pastes logs and documents as url
+
+× This function is only used for pasting docs as url 
+
+× Powered by  eru sama"""
+__mod_name__ = "「PASTE」​"
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
