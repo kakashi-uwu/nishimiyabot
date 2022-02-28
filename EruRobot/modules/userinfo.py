@@ -590,7 +590,16 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Info & AFK"
+__help__ = """
+➢ `/info`*:* get userinfo via I'd or username
+➢ `/bio`*:* shows the bio of any user
+➢ `/setbio`*:* to set bio of any user
+➢ `/setme`*:* set own bio <setme text>
+➢ `/stats`*:* for appraisal of statics of eru sama (only for disasters)
+➢ `/gifid`*:* gets the I'd of gif
+➢ `/me`*:* to know "about me" 
+➢ `/cinfo`*:* fetches the information of any chat via I'd or username"""
+__mod_name__ = "「INFO」"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
