@@ -26,4 +26,4 @@ async def apakah(event):
 
 __help__ = """
 ➢ `/what`*:* <argument> you'll get some random.....or maybe annoying answers"""
-__mod_name__ = "「❣️WHAT❣️」"
+__mod_name__ = "❣️Wʜᴀᴛ❣️"
