@@ -9,7 +9,9 @@ from EruRobot.utils.permissions import adminsOnly
 from EruRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
 from EruRobot.utils.filter_groups import nsfw_detect_group
 
-__mod_name__ = "Anti-NSFW​"
+__help__ = """
+➢ `/antinsfw`*:* [on/off] will protect your group from being ruined by nsfw content"""
+__mod_name__ = "「ANTI-NSFW」"
 
 async def get_file_id_from_message(message):
     file_id = None
