@@ -53,3 +53,10 @@ def wiki(update: Update, context: CallbackContext):
 
 WIKI_HANDLER = DisableAbleCommandHandler("wiki", wiki, run_async=True)
 dispatcher.add_handler(WIKI_HANDLER)
+
+__help__ = """
+➢ `/wiki`*:* get results of your query over internet
+
+× this function allows you to get results over the web
+× for example: /wiki India"""
+__mod_name__ = "「WIKI」"
