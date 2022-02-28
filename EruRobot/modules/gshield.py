@@ -315,4 +315,8 @@ async def del_profanity(event):
                     await asyncio.sleep(10)
                     await dev.delete()
 
-__mod_name__ = "Shield"
+__help__ = """
+➢ `/profanity`*:* [on/off] turn on or off profanity
+➢ `/gshield`*:* [on/off] to access nsfw gaurdian 
+➢ `/globalmode`*:* [yes/no] to access globalmode"""
+__mod_name__ = "「SHIELD」"
