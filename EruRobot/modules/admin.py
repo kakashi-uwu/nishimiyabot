@@ -889,7 +889,7 @@ __help__ = """
 ➢ `/midpromote`*:* mid promote any users
 ➢ `/fullpromote`*:* promote user in group with full rights
 ➢ `/demote`*:* to demote admins to normal user"""
-__mod_name__ = "「ADMINS」"
+__mod_name__ = "Aᴅᴍɪɴs"
 __command_list__ = [
     "setdesc"
     "setsticker"
