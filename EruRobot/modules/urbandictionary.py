@@ -30,6 +30,6 @@ For example: /ud baby
 
 
      *Powered by eru sama*"""
-__mod_name__ = "「DICTIONARY」"
+__mod_name__ = "ᴅɪᴄᴛɪᴏɴᴀʀʏ"
 __command_list__ = ["ud"]
 __handlers__ = [UD_HANDLER]
