@@ -46,4 +46,4 @@ async def PokeDex(_, message):
 
 __help__ = """
 ➢ `/pokedex`*:* <Pokemon name> for Pokemon info"""
-__mod_name__ = "「POKEDEX」"
+__mod_name__ = "Pᴏᴋᴇᴅᴇx"
