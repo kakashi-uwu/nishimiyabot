@@ -453,7 +453,12 @@ def __stats__():
 def helps(chat):
     return gs(chat, "blacklist_help")
 
-__mod_name__ = "Blacklists"
+__help__ = """
+➢ `/addblacklist`*:* use this command to add any word to blacklist
+➢ `/removeblacklist`*:* removes any word out of your blacklist
+➢ `/addblsticker`*:* use this command to add stickers to blacklist
+➢ `/rmblsticker`*:* use this command to remove stickers from blacklist"""
+__mod_name__ = "「BLACKLISTS」"
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
     "blacklist",
