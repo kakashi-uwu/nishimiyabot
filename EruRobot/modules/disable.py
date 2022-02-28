@@ -342,7 +342,7 @@ if is_module_loaded(FILENAME):
 
 __help__ = """
 ➢ `/disable`*:* <command name> to disable any command """
-    __mod_name__ = "「DISABLING」"
+    __mod_name__ = "Disabling"
 
 else:
     DisableAbleCommandHandler = CommandHandler
