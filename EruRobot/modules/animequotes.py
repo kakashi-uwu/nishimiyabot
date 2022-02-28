@@ -159,7 +159,13 @@ QUOTES_IMG = (
       "https://i.imgur.com/r7MmFZI.jpg",
       "https://i.postimg.cc/LsGJsMd6/Itachie.jpg"
       
-      )    
+      )  
+
+__help__ = """
+➢ `/quote`*:* for quotes
+➢ `/animequotes`*:* for anime quotes"""
+__mod_name__ = "「ANIME-QUOTES」"
+  
 
 ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animequotes", animequotes, run_async=True)
 QUOTES_HANDLER = DisableAbleCommandHandler("quote", quotes, run_async=True)
