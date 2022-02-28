@@ -211,4 +211,4 @@ def prettyjson(obj, indent=2, maxlinelength=80):
 
 __help__ = """
 ➢ `/usage`*:* to get info bout' dynos usage and days"""
-__mod_name__ = "「HEROKU」"
+__mod_name__ = "ʜᴇʀᴏᴋᴜ"
