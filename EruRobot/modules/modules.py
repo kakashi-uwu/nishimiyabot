@@ -188,4 +188,4 @@ __help__ = """
 ➢ `/unload`*:* <module name> to unload any module
 ➢ `/listmodules`*:* to get the list of all modules
 ➢ `/load`*:* <module name> to load module"""
-__mod_name__ = "「MODULES」"
+__mod_name__ = "Mᴏᴅᴜʟᴇs"
