@@ -296,7 +296,7 @@ dispatcher.add_handler(BLOCKANIMATION_HANDLER)
 __help__ = """
 ➢ `/love`*:* love animation
 ➢ `/hack`*:* hack animation"""
-__mod_name__ = "「ANIMATION」"
+__mod_name__ = "Aɴɪᴍᴀᴛɪᴏɴ"
 __command_list__ = [
     "love",
     "hack",
