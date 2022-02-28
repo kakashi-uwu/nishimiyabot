@@ -180,4 +180,13 @@ def config(client, message):
 def helps(chat):
     return gs(chat, "fsub_feds_help")
 
-__mod_name__ = "F-Sub/Feds"
+__help__ = """
+➢ `/newfed`*:* <fed name> to create a new fed
+➢ `/fedid`*:* get the fed id by this  
+➢ `/delfed`*:* <fed id> to delete federation
+➢ `/joinfed`*:* <fed id> to join a federation
+➢ `/fsubs`*:* [enable/disable] force subscribe
+
+
+    *Powered by eru sama*"""
+__mod_name__ = "「F-SUB/FEDS」"
