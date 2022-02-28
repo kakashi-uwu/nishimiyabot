@@ -46,4 +46,4 @@ def helps(chat):
 
 __help__ = """
 ➢ `/antichannelmode`*:* on/off use this command for disabling channel channels from group"""
-__mod_name__ = "「ANTI-CHANNEL」"
+__mod_name__ = "ᴀɴᴛɪ-ᴄʜᴀɴɴᴇʟ"
