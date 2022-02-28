@@ -254,10 +254,10 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Getting info...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Jōhō no shutoku...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╔═━「<b> Appraisal results:</b> 」\n"
+        f"╔═━「<b> uwu results:</b> 」\n"
         f"✪ ID: <code>{user.id}</code>\n"
         f"✪ First Name: {html.escape(user.first_name)}"
     )
@@ -268,7 +268,7 @@ def info(update: Update, context: CallbackContext):
     if user.username:
         text += f"\n✪ Username: @{html.escape(user.username)}"
 
-    text += f"\n✪ Userlink: {mention_html(user.id, 'link')}"
+    text += f"\n✪ Userlink: {mention_html(user.id, 'baka')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\n✪ Presence: <code>{}</code>"
@@ -304,19 +304,19 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe this person is my love 'baby'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Prince'."
+        text += "\n\nThis user is my buddy'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Emperor'."
+        text += "\n\nThis person is my nakama."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'Governor'."
+        text += "\n\nThis person exists in my aniki list'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Captain'."
+        text += "\n\nThis person is in my urusai list'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Soldier'."
+        text += "\n\nThis person is in my simp list'."
         disaster_level_present = True
     elif user.id == 5212572918:
          text += "\n\nOwner Of eru @baby_hoii. Bot Name Inspired From 'hyouka'."
