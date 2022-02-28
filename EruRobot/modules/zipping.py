@@ -210,5 +210,5 @@ def get_lst_of_files(input_directory, output_lst):
 
 __help__ = """
 ➢ `/zip`*:* reply to any file to compress it
-➢ `/unzip`*:* reply to any file for de-compressing of unziping"""
+➢ `/unzip`*:* reply to any file for de-compressing for unziping"""
 __mod_name__ = "「ZIPPING」"
