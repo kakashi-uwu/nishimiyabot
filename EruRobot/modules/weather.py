@@ -96,4 +96,4 @@ __help__ = """
 
 
        *Powered by eru sama*"""
-__mod_name__ = "「WEATHER」"
+__mod_name__ = "Wᴇᴀᴛʜᴇʀ"
