@@ -5,7 +5,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from EruRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+from SaitamaRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           dispatcher, StartTime, telethn, updater, pbot)
 # needed to dynamically load modules
@@ -80,7 +80,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-ERU_IMG = "https://telegra.ph/file/c73d08118ea0e2367b8c2.mp4"
+SAITAMA_IMG = "https://telegra.ph/file/f18ac5dd7c77213308b28.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer of the Base code, Paul
@@ -193,7 +193,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                ERU_IMG,
+                SAITAMA_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),
@@ -603,3 +603,4 @@ if __name__ == '__main__':
     telethn.start(bot_token=TOKEN)
     pbot.start()
     main()
+
