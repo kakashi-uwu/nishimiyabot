@@ -80,7 +80,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-ERU_IMG = ""
+ERU_IMG = "https://telegra.ph/file/c73d08118ea0e2367b8c2.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer of the Base code, Paul
