@@ -84,7 +84,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ eru ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/eruxrobot?startgroup=true"),
+            text="➕️Sᴜᴍᴍᴏɴ ᴇʀᴜ ➕️", url="t.me/eruxrobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="eru_"),
@@ -93,15 +93,15 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="developer", url="t.me/yoi_babes"),
+            text="Cʜᴇʀʀʏ-ᴋᴜɴ", url="t.me/yoi_babes"),
     ],
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ eru ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/eruxrobot?startgroup=true"),
+            text="Oғғ-ᴛᴏᴘɪᴄ", url="t.me/flirt_area"),
     ],
 ]
 
