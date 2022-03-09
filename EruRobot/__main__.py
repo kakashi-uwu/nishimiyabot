@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 GROUP_START_IMG = "https://telegra.ph/file/cd39ddc9c1636b8a84ba4.mp4"
 
 PM_START_TEXT = """
-× ʜᴇʟʟᴏ [×](https://telegra.ph/file/9815ea7c4ecc4c43425b6.mp4), ɪᴍ eru ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+× ʜᴇʟʟᴏ [×](https://telegra.ph/file/db73c26b18976abf21db0.mp4), ɪᴍ eru ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
 ──────────────────────
 ×`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
 ──────────────────────
@@ -94,6 +94,10 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="➕️ ᴀᴅᴅ eru ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/eruxrobot?startgroup=true"),
     ],
 ]
 
