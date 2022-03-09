@@ -99,6 +99,10 @@ buttons = [
         InlineKeyboardButton(
             text="developer", url="t.me/yoi_babes"),
     ],
+    [
+        InlineKeyboardButton(
+            text="➕️ ᴀᴅᴅ eru ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/eruxrobot?startgroup=true"),
+    ],
 ]
 
 
