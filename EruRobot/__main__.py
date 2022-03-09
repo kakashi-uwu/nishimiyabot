@@ -87,7 +87,7 @@ buttons = [
             text="➕️Sᴜᴍᴍᴏɴ ᴇʀᴜ ➕️", url="t.me/eruxrobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="eru_"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="eru_about"),
         InlineKeyboardButton(
             text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
