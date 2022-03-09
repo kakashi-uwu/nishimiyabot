@@ -20,7 +20,7 @@ from telegram.ext import (
     run_async,
 )
 
-AEruRobotFK_GROUP = 7
+AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
 
 
