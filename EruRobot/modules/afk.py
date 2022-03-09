@@ -1,7 +1,6 @@
 import random
 import html
 from datetime import datetime
-import humanize
 
 from EruRobot import dispatcher
 from EruRobot.modules.disable import (
