@@ -75,7 +75,8 @@ def get_readable_time(seconds: int) -> str:
 GROUP_START_IMG = "https://telegra.ph/file/cd39ddc9c1636b8a84ba4.mp4"
 
 PM_START_TEXT = """
-× ʜᴇʟʟᴏ [💖](https://telegra.ph/file/db73c26b18976abf21db0.mp4), I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
+
+× ʜᴇʟʟᴏ [(^_^メ)](https://telegra.ph/file/db73c26b18976abf21db0.mp4), I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
 ──────────────────────
 ×`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
 ──────────────────────
@@ -84,7 +85,7 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="summon Naruto",url="t.me/Blue_freya_bot?startgroup=true"),
+            text="summon eru",url="t.me/Blue_freya_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
@@ -92,7 +93,7 @@ buttons = [
      
     ],
     [     InlineKeyboardButton(
-            text="flirt area", url="https://telegram.dog/flirt_area"),
+            text="off topic", url="https://telegram.dog/flirt_area"),
     
     ],
     [
