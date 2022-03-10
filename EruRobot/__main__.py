@@ -85,35 +85,35 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="summon eru",url="t.me/Blue_freya_bot?startgroup=true"),
+            text="Sᴜᴍᴍᴏɴ ᴇʀᴜ ",url="t.me/Blue_freya_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
-              text="Help", callback_data="help_back"),
+              text="Hᴇʟᴘ", callback_data="help_back"),
      
     ],
     [     InlineKeyboardButton(
-            text="off topic", url="https://telegram.dog/flirt_area"),
+            text="Oғғ-ᴛᴏᴘɪᴄ", url="https://telegram.dog/flirt_area"),
     
     ],
     [
         InlineKeyboardButton(
-            text=" Updates", url="https://telegram.dog/eruxupdates"),
+            text="Uᴘᴅᴀᴛᴇs", url="https://telegram.dog/eruxupdates"),
     ],
     [
         InlineKeyboardButton(
-            text="cherry-kun", url="https://t.me/yoi_babes"),
+            text="Cʜᴇʀʀʏ-ᴋᴜɴ ", url="https://t.me/yoi_babes"),
           
 
 
 InlineKeyboardButton(
-            text="SUPPORT", url="https://telegram.dog/eruXsupport"
+            text="Sᴜᴘᴘᴏʀᴛ", url="https://telegram.dog/eruXsupport"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="Source Code", url="https://github.com/baby-kun/EruRobot"
+                    text="GɪᴛHᴜʙ ^_^", url="https://github.com/baby-kun"
         ),
     ],
 ]
@@ -246,21 +246,20 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="Add eru to your group",
+                            text="Sᴜᴍᴍᴏɴ ᴇʀᴜ ",
                             url="t.me/{}?startgroup=true".format(context.bot.username))
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support Chat ",
-                            url="https://t.me/eruXsupport"),
+                            text="Cʜᴇʀʀʏ-ᴋᴜɴ ",
+                            url="https://t.me/yoi_babes"),
                         InlineKeyboardButton(
-                            text="Updates ",
+                            text="Uᴘᴅᴀᴛᴇs",
                             url="https://t.me/eruxupdates")
                     ],
                     [
                         InlineKeyboardButton(
-                            text="help",
-                            url="https://t.me/Chizurumanagementbot?start=help")
+                            text="Hᴇʟᴘ", callback_data="help_back")
                     ]]))
 
 
