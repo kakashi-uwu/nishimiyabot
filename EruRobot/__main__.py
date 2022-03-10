@@ -82,26 +82,38 @@ PM_START_TEXT = """
 """
 
 buttons = [
-    [
+        [
         InlineKeyboardButton(
-            text="➕️Sᴜᴍᴍᴏɴ ᴇʀᴜ ➕️", url="t.me/eruxrobot?startgroup=true"),
+            text="summon Naruto",url="t.me/Blue_freya_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="eru_about"),
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+              text="Help", callback_data="help_back"),
+     
+    ],
+    [     InlineKeyboardButton(
+            text="flirt area", url="https://telegram.dog/flirt_area"),
+    
+    ],
+    [
+        InlineKeyboardButton(
+            text=" Updates", url="https://telegram.dog/eruxupdates"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="cherry-kun", url="https://t.me/yoi_babes"),
+          
+
+
+InlineKeyboardButton(
+            text="SUPPORT", url="https://telegram.dog/eruXsupport"
         ),
-    ],
-    [
-        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Cʜᴇʀʀʏ-ᴋᴜɴ", url="t.me/yoi_babes"),
+
     ],
     [
         InlineKeyboardButton(
-            text="Oғғ-ᴛᴏᴘɪᴄ", url="t.me/flirt_area"),
+                    text="Source Code", url="https://github.com/baby-kun/EruRobot"
+        ),
     ],
 ]
 
