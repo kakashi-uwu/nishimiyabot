@@ -259,7 +259,8 @@ def start(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Hᴇʟᴘ", callback_data="help_back")
+                            text="Hᴇʟᴘ",
+                            url="t.me/eruxrobot?start=help")
                     ]]))
 
 
