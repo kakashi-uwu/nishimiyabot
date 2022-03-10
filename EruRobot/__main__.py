@@ -243,28 +243,29 @@ def start(update: Update, context: CallbackContext):
                 uptime
             ),
             parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
+                reply_markup=InlineKeyboardMarkup(
+                    [[
                         InlineKeyboardButton(
-                            text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/eruXsupport"
-                        )
+                            text="Add eru to your group",
+                            url="t.me/{}?startgroup=true".format(context.bot.username))
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Uᴘᴅᴀᴛᴇs",
-                            url="https://telegram.dog/eruxupdates",
-                        )
-                    ],
-                                        [
+                            text="Support Chat ",
+                            url="https://t.me/eruXsupport"),
                         InlineKeyboardButton(
-                            text="💝 Bᴀʙʏ 💝",
-                            url="https://t.me/baby_hoii",
-                        )
+                            text="Updates ",
+                            url="https://t.me/eruxupdates")
                     ],
-                ]
-            ),
-        )
+                    [
+                        InlineKeyboardButton(
+                            text="help",
+                            url="https://t.me/Chizurumanagementbot?start=help")
+                    ]]))
+
+
+
+
 
 
 
