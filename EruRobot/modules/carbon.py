@@ -30,26 +30,54 @@ MEMEK = "https://telegra.ph/file/8408e4ef091c3d97c8cb9.jpg"
 async def repo(_, message):
     await message.reply_photo(
         photo=MEMEK,
-        caption=f""" **hoi baka I'm eru chitanda**  
+        caption=f""" **ʜᴏɪ ᴋɪᴅᴅᴏ I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ  **  
 
-**Owner repo : [Baby](https://t.me/baby_hoii)**
-╔════════════════╗
-┣ Eh  baka unfortunately
-┣ you are not authorised
-┣ to use my repo source 
-┣ use the instructions below
-╚════════════════╝
+**Oᴡɴᴇʀ ʀᴇᴘᴏ : [ᴄʜᴇʀʀʏ-ᴋᴜɴ](https://t.me/baby_hoii)**
+╔════════════════════╗
+┣× ʀᴇᴘᴏ ɪs ᴘʀɪᴠᴀᴛᴇ
+┣× ᴏᴡɴᴇʀ ɪs ʜᴀʀᴀᴍɪ 
+┣× ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ɪᴛ 
+┣× sᴏ ᴋɪɴᴅʟʏ ғᴜᴄᴋ ᴏғғ
+╚════════════════════╝
 
-**Contact academy support or my hubby for repo request.**
+**Gʀᴏᴡ ᴜᴘ ᴋɪᴅ, ᴛʜᴇɴ I'ʟʟ ᴛʜɪɴᴋ ᴀʙᴏᴜᴛ ɪᴛ.**
 """,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "Hubby", url="https://t.me/baby_hoii"), 
-                    InlineKeyboardButton(
-                        "Support", url="https://t.me/eruXsupport")
-                ]
-            ]
-        )
-    )
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(
+                                text="Aᴅᴅ ᴇʀᴜ",
+                                url="t.me/EruXbot?startgroup=true".format(
+                                    context.bot.username,
+                                ),
+                            ),
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text="Sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ",
+                                url=f"https://t.me/{SUPPORT_CHAT}",
+                            ),
+                            InlineKeyboardButton(
+                                text="Uᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ",
+                                url="https://t.me/eruxupdates",
+                            ),
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text="Cʜᴇʀʀʏ-ᴋᴜɴ",
+                                url="https://t.me/yoi_babes",
+                            ),
+                            InlineKeyboardButton(
+                                text="Hᴇʟᴘ",
+                                url="t.me/eruxbot?start=help",
+                            ),
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text="Nᴇᴛᴡᴏʀᴋ",
+                                url="https://t.me/theacademy_official",
+                            ),
+                        ],
+                    ],
+                ),
+            )
