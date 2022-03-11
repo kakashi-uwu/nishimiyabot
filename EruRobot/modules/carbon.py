@@ -46,13 +46,10 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "GɪᴛHᴜʙ", url="https://github.com/baby-kun"),
-                    InlineKeyboardButton(
-                        "Cʜᴇʀʀʏ-ᴋᴜɴ", url="https:/t.me/yoi_babes"), 
+                        "GɪᴛHᴜʙ", url="https://github.com/baby-kun"), 
                     InlineKeyboardButton(
                         "Sᴜᴘᴘᴏʀᴛ", url="https://t.me/eruXsupport")
                 ]
             ]
         )
     )
-
