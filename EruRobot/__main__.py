@@ -113,7 +113,7 @@ InlineKeyboardButton(
     ],
     [
         InlineKeyboardButton(
-                    text="GɪᴛHᴜʙ ^_^", url="https://github.com/baby-kun/EruRobot"
+                    text="GɪᴛHᴜʙ ^_^", url="https://github.com/baby-kun"
         ),
     ],
 ]
