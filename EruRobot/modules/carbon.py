@@ -43,15 +43,6 @@ async def repo(_, message):
 **Gʀᴏᴡ ᴜᴘ ᴋɪᴅ, ᴛʜᴇɴ I'ʟʟ ᴛʜɪɴᴋ ᴀʙᴏᴜᴛ ɪᴛ.**
 """,
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                text="Aᴅᴅ ᴇʀᴜ",
-                                url="t.me/EruXbot?startgroup=true".format(
-                                    context.bot.username,
-                                ),
-                            ),
-                        ],
                         [
                             InlineKeyboardButton(
                                 text="Sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ",
