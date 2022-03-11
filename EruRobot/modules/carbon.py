@@ -42,14 +42,25 @@ async def repo(_, message):
 
 **Gʀᴏᴡ ᴜᴘ ᴋɪᴅ, ᴛʜᴇɴ I'ʟʟ ᴛʜɪɴᴋ ᴀʙᴏᴜᴛ ɪᴛ.**
 """,
-        reply_markup=InlineKeyboardMarkup(
-            [
+            reply_markup=InlineKeyboardMarkup(
                 [
-                    InlineKeyboardButton(
-                        "GɪᴛHᴜʙ", url="https://github.com/baby-kun"), 
-                    InlineKeyboardButton(
-                        "Sᴜᴘᴘᴏʀᴛ", url="https://t.me/eruXsupport")
+                    [
+                        InlineKeyboardButton(
+                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NobaraSupport"
+                        )
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ᴜᴘᴅᴀᴛᴇs",
+                            url="https://telegram.dog/YoriichiXUpdates",
+                        )
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            text="ᴀᴏɢɪʀɪ ᴜɴɪᴏɴ",
+                            url="https://telegram.dog/AogiriNetwork",
+                        )
+                    ],
                 ]
-            ]
+            ),
         )
-    )
