@@ -42,33 +42,17 @@ async def repo(_, message):
 
 **Gʀᴏᴡ ᴜᴘ ᴋɪᴅ, ᴛʜᴇɴ I'ʟʟ ᴛʜɪɴᴋ ᴀʙᴏᴜᴛ ɪᴛ.**
 """,
-                reply_markup=InlineKeyboardMarkup(
-                        [
-                            InlineKeyboardButton(
-                                text="Sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
-                            ),
-                            InlineKeyboardButton(
-                                text="Uᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ",
-                                url="https://t.me/eruxupdates",
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="Cʜᴇʀʀʏ-ᴋᴜɴ",
-                                url="https://t.me/yoi_babes",
-                            ),
-                            InlineKeyboardButton(
-                                text="Hᴇʟᴘ",
-                                url="t.me/eruxbot?start=help",
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="Nᴇᴛᴡᴏʀᴋ",
-                                url="https://t.me/theacademy_official",
-                            ),
-                        ],
-                    ],
-                ),
-            )
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "GɪᴛHᴜʙ", url="https://github.com/baby-kun"),
+                    InlineKeyboardButton(
+                        "Cʜᴇʀʀʏ-ᴋᴜɴ", url="https:/t.me/yoi_babes"), 
+                    InlineKeyboardButton(
+                        "Sᴜᴘᴘᴏʀᴛ", url="https://t.me/eruXsupport")
+                ]
+            ]
+        )
+    )
+
