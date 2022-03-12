@@ -581,9 +581,9 @@ def baka(update, context):
     msg.reply_video(nekos.img(target))
 
 
-def hyouka(update, context):
+def cuddle(update, context):
     msg = update.effective_message
-    target = "hyouka"
+    target = "cuddle"
     msg.reply_video(nekos.img(target))
 
 
@@ -657,7 +657,7 @@ TITSGIF_HANDLER = CommandHandler("titsgif", titsgif, run_async=True)
 ERO_HANDLER = CommandHandler("ero", ero, run_async=True)
 SMUG_HANDLER = CommandHandler("smug", smug, run_async=True)
 BAKA_HANDLER = CommandHandler("baka", baka, run_async=True)
-HYOUKA_HANDLER = CommandHandler("hyouka", hyouka, run_async=True)
+HUG_HANDLER = CommandHandler("cuddle", hug, run_async=True)
 DVA_HANDLER = CommandHandler("dva", dva, run_async=True)
 
 
@@ -773,7 +773,7 @@ __handlers__ = [
     ERO_HANDLER,
     SMUG_HANDLER,
     BAKA_HANDLER,
-    HYOUKA_HANDLER,
+    HUG_HANDLER,
     DVA_HANDLER,
 ]
 
