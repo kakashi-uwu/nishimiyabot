@@ -202,7 +202,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_video(
-                    OWNER_IMG, caption=f"my hubby enters the field {html.escape(user.first_name)} ! turn into ashes morons.", reply_to_message_id=reply,
+                    OWNER_IMG, caption=f"my hubby enters the field {html.escape(user.first_name)} ! turn em into ashes.", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
                 welcome_log = (
@@ -215,7 +215,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_video(
-                    BUDDY_IMG, caption = f"attention kids my buddy is here {html.escape(user.first_name)} beware of him.", reply_to_message_id=reply,
+                    BUDDY_IMG, caption = f"attention kids my buddy is here {html.escape(user.first_name)} how are you ?.", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
                 welcome_log = (
