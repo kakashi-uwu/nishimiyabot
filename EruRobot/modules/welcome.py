@@ -59,8 +59,8 @@ VALID_WELCOME_FORMATTERS = [
     "chatname",
     "mention",
 ]
-SEXY_IMG = "https://telegra.ph/file/ee2217fc9f597794777cb.jpg"
-LUCI_IMG = "https://telegra.ph/file/1f6195d971ae9bd545cbb.jpg"
+SEXY_IMG = "https://telegra.ph/file/91bdaa998d7fd7633e39e.jpg"
+LUCI_IMG = "https://telegra.ph/file/f665ba7cf10b103efbe38.jpg"
 SATAN_IMG = "https://telegra.ph/file/b12cfa028c2bcc4c381d9.jpg"
 
 ENUM_FUNC_MAP = {
@@ -166,7 +166,7 @@ def new_member(update: Update, context: CallbackContext):
 
     for new_mem in new_members:
 
-        if new_mem.id == bot.id and not SaitamaRobot.ALLOW_CHATS:
+        if new_mem.id == bot.id and not EruRobot.ALLOW_CHATS:
             with suppress(BadRequest):
                 update.effective_message.reply_text(f"Groups are disabled for {bot.first_name}, I'm outta here.")
             bot.leave_chat(update.effective_chat.id)
@@ -202,7 +202,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_photo(
-                    SEXY_IMG, caption=f"The Wizard King {html.escape(user.first_name)} Joined You Should Feel Honored.", reply_to_message_id=reply,
+                    SEXY_IMG, caption=f"my hubby enters the field {html.escape(user.first_name)} turn into ashes morons.", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
                 welcome_log = (
@@ -215,7 +215,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_photo(
-                    LUCI_IMG, caption = f"The Wizard Hunter {html.escape(user.first_name)} Joined Beware of Him.", reply_to_message_id=reply,
+                    LUCI_IMG, caption = f"attention kids my buddy is here {html.escape(user.first_name)} beware of him.", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
                 welcome_log = (
@@ -228,7 +228,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_photo(
-                    SATAN_IMG, caption=f"Wizard Dragon is here. \n The Almighty Wizard member", reply_to_message_id=reply,
+                    SATAN_IMG, caption=f"one of my nakamas entered. \nThe nakama list appeared", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
                 welcome_log = (
