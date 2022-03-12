@@ -254,24 +254,24 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_text(
-                    " A Tiger Just joined the group!", reply_to_message_id=reply,
+                    " A urusai user Just joined the group!", reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"my simps  joined the chat"
+                    f"urusai listed user joined the chat"
                 )
                 continue
 
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "A Bounty Hunter just joined the group!", reply_to_message_id=reply,
+                    "One of my simps just joined the group!", reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"A whitelisted user joined the chat"
+                    f"simp  joined the chat"
                 )
                 continue
 
