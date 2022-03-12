@@ -651,3 +651,7 @@ GDMORNING = (
     "`Wake up and sip a cup of loving friendship. Eat your heart out from a plate of hope. To top it up, a fork full of kindness and love. Enough for a happy good morning!`",
     "`It is easy to imagine the world coming to an end. But it is difficult to imagine spending a day without my friends. Good morning.`",
     )
+OREKI_TEXT = (
+    "i don't care if someone like me or not, I wasn't made for amusing someone. By oreki houtarou!",
+    "Im not Strange, it's just my fantasy which never met your reality. By oreke houtarou!"
+)
