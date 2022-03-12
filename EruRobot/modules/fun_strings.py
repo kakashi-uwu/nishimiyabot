@@ -655,3 +655,7 @@ OREKI_TEXT = (
     "i don't care if someone like me or not, I wasn't made for amusing someone. By oreki houtarou!",
     "Im not Strange, it's just my fantasy which never met your reality. By oreke houtarou!"
 )
+HYOUKA_GIFS = (
+    "CgACAgQAAx0CW-a-NgABAScVYixx0B4AAQ2F3N61SeQ4eltSAxalAAJBAwACyfy1UjKlOgegcUNYIwQ",
+    "CgACAgQAAx0CW-a-NgABAScWYixx17AHhrAmXQsSOXYFbBmyu4YAAhoDAAKNyrRSzh1-hsu31SgjBA",
+)
