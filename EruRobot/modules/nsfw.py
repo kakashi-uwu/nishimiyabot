@@ -657,7 +657,7 @@ TITSGIF_HANDLER = CommandHandler("titsgif", titsgif, run_async=True)
 ERO_HANDLER = CommandHandler("ero", ero, run_async=True)
 SMUG_HANDLER = CommandHandler("smug", smug, run_async=True)
 BAKA_HANDLER = CommandHandler("baka", baka, run_async=True)
-HUG_HANDLER = CommandHandler("cuddle", hug, run_async=True)
+HUG_HANDLER = CommandHandler("cuddle", cuddle)
 DVA_HANDLER = CommandHandler("dva", dva, run_async=True)
 
 
@@ -715,7 +715,7 @@ dispatcher.add_handler(TITSGIF_HANDLER)
 dispatcher.add_handler(ERO_HANDLER)
 dispatcher.add_handler(SMUG_HANDLER)
 dispatcher.add_handler(BAKA_HANDLER)
-dispatcher.add_handler(HYOUKA_HANDLER)
+dispatcher.add_handler(HUG_HANDLER)
 dispatcher.add_handler(DVA_HANDLER)
 
 __handlers__ = [
