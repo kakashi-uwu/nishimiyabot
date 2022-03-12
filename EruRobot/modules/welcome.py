@@ -214,7 +214,7 @@ def new_member(update: Update, context: CallbackContext):
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
-                update.effective_message.reply_photo(
+                update.effective_message.reply_video(
                     LUCI_IMG, caption = f"attention kids my buddy is here {html.escape(user.first_name)} beware of him.", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
