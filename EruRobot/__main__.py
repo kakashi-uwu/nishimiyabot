@@ -128,7 +128,7 @@ HELP_STRINGS = """
 amelia_IMG = "https://telegra.ph/file/9815ea7c4ecc4c43425b6.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @itsmelegend\
+ You can support the project via [Paypal](#) or by contacting @yoi_babes\
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
