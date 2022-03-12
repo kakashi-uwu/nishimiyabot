@@ -656,49 +656,16 @@ OREKI_TEXT = (
     "Im not Strange, it's just my fantasy which never met your reality. By oreke houtarou!"
 )
 HYOUKA_TEMPLATES = (
-    "{user1} pats {user2} on the head.",
-    "*gently rubs {user2}'s head*.",
-    "*{user1} mofumofus {user2}'s head*",
-    "*{user1} messes up {user2}'s head*",
-    "*{user1} intensly rubs {user2}'s head*",
-    "*{user2}'s waifu pats their head*",
-    "*{user2}'s got free headpats*",
-    "No pats for {user2}!",
-    "Oh no! We are all out of pats.",
-    "This is a designated no pat zone!",
-    "No pats for {user2}!",
-    "{user1} spoils {user2} with headpats!",
-    "{user2} received one free headpat!",
-    "{user1} headpats {user2} whilst giving a lap pillow",
-    "{user1} aggressively pats {user2}",
-    "{user1} gently strokes {user2}'s head",
-    "Pat, pat, pat, pat",
-    "{user2} could not escape {user1}'s headpats",
-    "{user2}.exe has stopped working",
-    "{user1} rubs {user2} on the neck",
-    "Must... extort... HEADPATS",
-    "{user1} headpats {user2}'s head with a pat",
-    "{user1} pats {user2} unexpectedly",
-    "{user1} pats {user2} with consent, maybe?",
-    "Pat pat, {user2} honto kawaii ne!",
-    "{user1} headpats {user2} at 420apm",
-    "{user1} bellyrubs {user2}",
-    "{user1} pats {user2} friendlily",
-    "{user2} uses HEADPATS? O KAWAII KOTO",
-    "*headpats.gif intensifies for {user2}*",
-    "(*´ω´(*｀ω｀)",
-    "(ｏ・_・)ノ”(ᴗ_ ᴗ。)",
-    "(*￣▽￣)ノ”(- -*)",
-    "(っ´ω`)ﾉ(╥ω╥)",
+    "{user1} says to {user2} hyouka is chodu.",
     "( ´Д｀)ﾉ(´･ω･`) ﾅﾃﾞﾅﾃﾞ",
 )
 
 HYOUKA_GIFS = (
-    "CgACAgQAAxkBAALRX19Xs7tBdOH1gQwS_rglVRkTbgVYAAKEAgACmQn9UWlyGa_xy9_aGwQ",
-    "CgACAgEAAxkBAALRYF9Xs8EnhsDfDpld3ILoqTbzDmwxAAJFAAOJxjlHECanwn69E5QbBA",
+    "CgACAgQAAx0CXPdpPQACBBpiLH0xk0fEztQxGzdBBNLzGEFACwACIQMAApDzvFKVPxvN1FA8kyME",
+    "CgACAgQAAx0CXPdpPQACBBhiLH0m1QRrIYqqhJyoDrQv1tg6ugACGwMAAoYgtVKQK9Time-IhSME",
 )
 
 HYOUKA_STICKERS = (
-    "CAACAgQAAxkBAALRWV9Xs4HH0XaXfhZe-jWaZoXfs-IsAAJYAwACdDgSEHYOt4KvL02oGwQ",
-    "CAACAgQAAxkBAALRXF9Xs6XmIeDbnoL1wiDky0TdX-CvAAKKAQAC1TMzC9A3CtiT2rqVGwQ",
+    "CAACAgUAAx0CXPdpPQACA6xiLHwGL6kMTo7mwlbudgG9TwuapAACZgIAAnvAIVSaunTgzUfcKSME",
+    "CAACAgUAAx0CXPdpPQACA65iLHwHPogeilpxq_bZwGZplK07FQACKQIAAgHKKFTLJHRuEQcZtiME",
 )
