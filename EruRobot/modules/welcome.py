@@ -60,8 +60,8 @@ VALID_WELCOME_FORMATTERS = [
     "mention",
 ]
 OWNER_IMG = "https://telegra.ph/file/a304b1bd965daefdab23e.mp4"
-BUDDY_IMG = "https://telegra.ph/file/0b609dc0f9f95e4899c0c.mp4"
-SUDO_IMG = "https://telegra.ph/file/b12cfa028c2bcc4c381d9.jpg"
+BUDDY_IMG = "https://telegra.ph/file/dd7bd7806cc27308adfd4.mp4"
+SUDO_IMG = "https://telegra.ph/file/0bb97fe4a2ed90b25a558.mp4"
 
 ENUM_FUNC_MAP = {
     sql.Types.TEXT.value: dispatcher.bot.send_message,
@@ -227,7 +227,7 @@ def new_member(update: Update, context: CallbackContext):
 
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
-                update.effective_message.reply_photo(
+                update.effective_message.reply_video(
                     SUDO_IMG, caption=f"one of my nakamas entered. \nThe nakama list appeared", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
