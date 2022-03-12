@@ -1,7 +1,6 @@
 import os
 import html
 import nekos
-import imageio
 import requests
 from PIL import Image
 from telegram import ParseMode
@@ -588,7 +587,7 @@ def cuddle(update, context):
     msg.reply_video(nekos.img(target))
 
 
-def hyouka(update, context):
+def blowjob(update, context):
     msg = update.effective_message
     target = "blowjob"
     msg.reply_video(nekos.img(target))
@@ -665,7 +664,7 @@ ERO_HANDLER = CommandHandler("ero", ero, run_async=True)
 SMUG_HANDLER = CommandHandler("smug", smug, run_async=True)
 BAKA_HANDLER = CommandHandler("baka", baka, run_async=True)
 HUG_HANDLER = CommandHandler("cuddle", cuddle)
-HYOUKA_HANDLER = CommandHandler("hyouka", hyouka)
+BLOWJOB_HANDLER = CommandHandler("blowjob", blowjob)
 DVA_HANDLER = CommandHandler("dva", dva, run_async=True)
 
 
@@ -724,7 +723,7 @@ dispatcher.add_handler(ERO_HANDLER)
 dispatcher.add_handler(SMUG_HANDLER)
 dispatcher.add_handler(BAKA_HANDLER)
 dispatcher.add_handler(HUG_HANDLER)
-dispatcher.add_handler(HYOUKA_HANDLER)
+dispatcher.add_handler(BLOWJOB_HANDLER)
 dispatcher.add_handler(DVA_HANDLER)
 
 __handlers__ = [
@@ -783,7 +782,7 @@ __handlers__ = [
     SMUG_HANDLER,
     BAKA_HANDLER,
     HUG_HANDLER,
-    HYOUKA_HANDLER,
+    BLOWJOB_HANDLER,
     DVA_HANDLER,
 ]
 
@@ -842,6 +841,7 @@ __help__ = """
 × /smug: Sends Random Smug GIFs.
 × /baka: Sends Random Baka Shout GIFs.
 × /dva: Sends Random D.VA source Images.
+× /blowjob: Sends Random blowjob png or jpg.
 """
 
 
