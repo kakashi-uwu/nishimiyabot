@@ -655,17 +655,3 @@ OREKI_TEXT = (
     "i don't care if someone like me or not, I wasn't made for amusing someone. By oreki houtarou!",
     "Im not Strange, it's just my fantasy which never met your reality. By oreke houtarou!"
 )
-HYOUKA_TEMPLATES = (
-    "{user1} says to {user2} hyouka is chodu.",
-    "( ´Д｀)ﾉ(´･ω･`) ﾅﾃﾞﾅﾃﾞ",
-)
-
-HYOUKA_GIFS = (
-    "CgACAgQAAx0CXPdpPQACBBpiLH0xk0fEztQxGzdBBNLzGEFACwACIQMAApDzvFKVPxvN1FA8kyME",
-    "CgACAgQAAx0CXPdpPQACBBhiLH0m1QRrIYqqhJyoDrQv1tg6ugACGwMAAoYgtVKQK9Time-IhSME",
-)
-
-HYOUKA_STICKERS = (
-    "CAACAgUAAx0CXPdpPQACA6xiLHwGL6kMTo7mwlbudgG9TwuapAACZgIAAnvAIVSaunTgzUfcKSME",
-    "CAACAgUAAx0CXPdpPQACA65iLHwHPogeilpxq_bZwGZplK07FQACKQIAAgHKKFTLJHRuEQcZtiME",
-)
