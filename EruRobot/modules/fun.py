@@ -365,6 +365,11 @@ def oreki(update: Update, context: CallbackContext):
     reply_text(random.choice(fun_strings.OREKI_TEXT))
 
 
+def hyouka(update: Update, context: CallbackContext):
+    reply_video = update.effective_message.reply_to_message.reply_video if update.effective_message.reply_to_message else update.effective_message.reply_video
+    reply_video(random.choice(fun_strings.HYOUKA_GIFS))
+
+
 @typing_action
 def abuse(update, context):
     # reply to correct message
@@ -409,6 +414,7 @@ WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, run_async=True)
 GBAM_HANDLER = DisableAbleCommandHandler("gbam", gbam, run_async=True)
 FLIRT_HANDLER = DisableAbleCommandHandler("flirt", flirt, run_async=True)
 OREKI_HANDLER = DisableAbleCommandHandler("oreki", oreki, run_async=True)
+HYOUKA_HANDLER = DisableAbleCommandHandler("hyouka", hyouka, run_async=True)
 ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse, pass_args=True, run_async=True)
 GDNIGHT_HANDLER = DisableAbleMessageHandler(
     Filters.regex(r"(?i)(goodnight|goodnight)"), goodnight, friendly="goodnight", run_async=True
@@ -432,6 +438,7 @@ dispatcher.add_handler(TABLE_HANDLER)
 dispatcher.add_handler(GBAM_HANDLER)
 dispatcher.add_handler(FLIRT_HANDLER)
 dispatcher.add_handler(OREKI_HANDLER)
+dispatcher.add_handler(HYOUKA_HANDLER)
 dispatcher.add_handler(ABUSE_HANDLER)
 dispatcher.add_handler(GDNIGHT_HANDLER)
 dispatcher.add_handler(GDMORNING_HANDLER)
@@ -475,6 +482,7 @@ __handlers__ = [
     GBAM_HANDLER,
     FLIRT_HANDLER,
     OREKI_HANDLER,
+    HYOUKA_HANDLER,
     ABUSE_HANDLER,
     GDNIGHT_HANDLER,
     GDMORNING_HANDLER,
