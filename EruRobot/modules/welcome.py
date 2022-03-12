@@ -59,9 +59,9 @@ VALID_WELCOME_FORMATTERS = [
     "chatname",
     "mention",
 ]
-SEXY_IMG = "https://telegra.ph/file/91bdaa998d7fd7633e39e.jpg"
-LUCI_IMG = "https://telegra.ph/file/0b609dc0f9f95e4899c0c.mp4"
-SATAN_IMG = "https://telegra.ph/file/b12cfa028c2bcc4c381d9.jpg"
+OWNER_IMG = "https://telegra.ph/file/a304b1bd965daefdab23e.mp4"
+BUDDY_IMG = "https://telegra.ph/file/0b609dc0f9f95e4899c0c.mp4"
+SUDO_IMG = "https://telegra.ph/file/b12cfa028c2bcc4c381d9.jpg"
 
 ENUM_FUNC_MAP = {
     sql.Types.TEXT.value: dispatcher.bot.send_message,
@@ -201,8 +201,8 @@ def new_member(update: Update, context: CallbackContext):
 
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                update.effective_message.reply_photo(
-                    SEXY_IMG, caption=f"my hubby enters the field {html.escape(user.first_name)} turn into ashes morons.", reply_to_message_id=reply,
+                update.effective_message.reply_video(
+                    OWNER_IMG, caption=f"my hubby enters the field {html.escape(user.first_name)} ! turn into ashes morons.", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
                 welcome_log = (
@@ -215,7 +215,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_video(
-                    LUCI_IMG, caption = f"attention kids my buddy is here {html.escape(user.first_name)} beware of him.", reply_to_message_id=reply,
+                    BUDDY_IMG, caption = f"attention kids my buddy is here {html.escape(user.first_name)} beware of him.", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
                 welcome_log = (
@@ -228,7 +228,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_photo(
-                    SATAN_IMG, caption=f"one of my nakamas entered. \nThe nakama list appeared", reply_to_message_id=reply,
+                    SUDO_IMG, caption=f"one of my nakamas entered. \nThe nakama list appeared", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
                 welcome_log = (
