@@ -589,7 +589,7 @@ def cuddle(update, context):
 
 def hyouka(update, context):
     msg = update.effective_message
-    target = "hyouka"
+    target = "blowjob"
     msg.reply_video(nekos.img(target))
 
 
