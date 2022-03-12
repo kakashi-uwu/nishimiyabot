@@ -366,8 +366,43 @@ def oreki(update: Update, context: CallbackContext):
 
 
 def hyouka(update: Update, context: CallbackContext):
-    reply_video = update.effective_message.reply_to_message.reply_video if update.effective_message.reply_to_message else update.effective_message.reply_video
-    reply_video(random.choice(fun_strings.HYOUKA_GIFS))
+    bot = context.bot
+    args = context.args
+    message = update.effective_message
+
+    reply_to = message.reply_to_message if message.reply_to_message else message
+
+    curr_user = html.escape(message.from_user.first_name)
+    user_id = extract_user(message, args)
+
+    if user_id:
+        patted_user = bot.get_chat(user_id)
+        user1 = curr_user
+        user2 = html.escape(patted_user.first_name)
+
+    else:
+        user1 = bot.first_name
+        user2 = curr_user
+
+    hyouka_type = random.choice(("Text", "Gif", "Sticker"))
+    if hyouka_type == "Gif":
+        try:
+            temp = random.choice(fun_strings.HYOUKA_GIFS)
+            reply_to.reply_animation(temp)
+        except BadRequest:
+            hyouka_type = "Text"
+
+    if hyouka_type == "Sticker":
+        try:
+            temp = random.choice(fun_strings.HYOUKA_STICKERS)
+            reply_to.reply_sticker(temp)
+        except BadRequest:
+            hyouka_type = "Text"
+
+    if hyouka_type == "Text":
+        temp = random.choice(fun_strings.HYOUKA_TEMPLATES)
+        reply = temp.format(user1=user1, user2=user2)
+        reply_to.reply_text(reply, parse_mode=ParseMode.HTML)
 
 
 @typing_action
