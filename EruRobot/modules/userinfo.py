@@ -299,7 +299,7 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis user is my 'hubby "cherry-kun"'."
+        text += "\n\nThis user is my 'hubby'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
         text += "\n\nThis user is my 'buddy'."
@@ -353,9 +353,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/Ruka_updates/6"),
+                                "Health", url="https://t.me/eruxupdates"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/Ruka_updates/7")
+                                "Disaster", url="https://t.me/eruxupdates")
                         ],
                     ]
                 ),
@@ -370,9 +370,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/Ruka_updates/6"),
+                                "Health", url="https://t.me/eruxupdates"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/Ruka_updates/7")
+                                "Disaster", url="https://t.me/eruxupdates")
                         ],
                     ]
                 ),
