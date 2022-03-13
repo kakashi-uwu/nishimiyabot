@@ -498,7 +498,7 @@ def stats(update: Update, context: CallbackContext):
         )
 
         
-@siestacallback(pattern=r"^pingCB")
+@erucallback(pattern=r"^pingCB")
 def pingCallback(update: Update, context: CallbackContext):
     query = update.callback_query
     start_time = time.time()
