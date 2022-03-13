@@ -474,8 +474,8 @@ def stats(update: Update, context: CallbackContext):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/Ruka_Updates)\n\n"
-            + "╘══「 Powered by [• 𝗕𝗼𝗻𝘁𝗲𝗻 •](https://t.me/Bonten_community) 」\n",
+            + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/eruxupdates)\n\n"
+            + "╘══「 Powered by [• academy •](https://t.me/theacademy_official) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
             disable_web_page_preview=True,
@@ -488,9 +488,9 @@ def stats(update: Update, context: CallbackContext):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/Ruka_Updates)\n\n"
+                    + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/eruxupdates)\n\n"
                 )
-                + "╘══「 Powered by [• 𝗕𝗼𝗻𝘁𝗲𝗻 •](https://t.me/Bonten_community) 」\n"
+                + "╘══「 Powered by [• academy •](https://t.me/theacademy_official) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
