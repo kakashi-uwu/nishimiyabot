@@ -36,10 +36,9 @@ from EruRobot.modules.sql import SESSION
 import EruRobot.modules.sql.userinfo_sql as sql
 from EruRobot.modules.disable import DisableAbleCommandHandler
 from EruRobot.modules.sql.global_bans_sql import is_user_gbanned
-from EruRobot.modules.redis.afk_redis import is_user_afk, afk_reason
 from EruRobot.modules.sql.afk_sql import is_afk, set_afk
 from EruRobot.modules.sql.users_sql import get_user_num_chats
-from EruRobot.modules.helper_funcs.decorators import RUKACALLBACK
+from EruRobot.modules.helper_funcs.decorators import ERUCALLBACK
 from EruRobot.modules.helper_funcs.chat_status import sudo_plus
 from EruRobot.modules.helper_funcs.extraction import extract_user
 from EruRobot import telethn
