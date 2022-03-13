@@ -1,4 +1,4 @@
-from RukaRobot.modules.disable import (
+from EruRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
@@ -9,7 +9,7 @@ from telegram.ext import (
     InlineQueryHandler,
 )
 from telegram.ext.filters import MessageFilter
-from RukaRobot import dispatcher as d, LOGGER
+from EruRobot import dispatcher as d, LOGGER
 from typing import Optional, Union, List
 
 
