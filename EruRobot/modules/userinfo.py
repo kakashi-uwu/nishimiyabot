@@ -449,7 +449,7 @@ def stats(update: Update, context: CallbackContext):
     ).scalar_one_or_none()
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
-    status = "*╒═══「 Ruka statistics 」*\n\n"
+    status = "*╒═══「 Eru sama  statistics 」*\n\n"
     status += "*• System Start time:* " + str(uptime) + "\n"
     uname = platform.uname()
     status += "*• System:* " + str(uname.system) + "\n"
