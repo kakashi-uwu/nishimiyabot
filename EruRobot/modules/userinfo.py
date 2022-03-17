@@ -353,9 +353,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/eruxupdates"),
+                                "Health", url="https://t.me/sinxupdates/1"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/eruxupdates")
+                                "Disaster", url="https://t.me/sinxupdates/2")
                         ],
                     ]
                 ),
@@ -370,9 +370,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/eruxupdates"),
+                                "Health", url="https://t.me/sinxupdates/1"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/eruxupdates")
+                                "Disaster", url="https://t.me/sinxupdates/2")
                         ],
                     ]
                 ),
@@ -474,8 +474,8 @@ def stats(update: Update, context: CallbackContext):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/eruxupdates)\n\n"
-            + "╘══「 Powered by [• academy •](https://t.me/theacademy_official) 」\n",
+            + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/sinxupdates)\n\n"
+            + "╘══「 Powered by [•sin•](https://t.me/tsinXnetwork) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
             disable_web_page_preview=True,
@@ -488,9 +488,9 @@ def stats(update: Update, context: CallbackContext):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/eruxupdates)\n\n"
+                    + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/sinxupdates)\n\n"
                 )
-                + "╘══「 Powered by [• academy •](https://t.me/theacademy_official) 」\n"
+                + "╘══「 Powered by [•sin•](https://t.me/tsinXnetwork) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
