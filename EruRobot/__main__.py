@@ -85,7 +85,7 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="Sᴜᴍᴍᴏɴ ᴇʀᴜ ",url="t.me/Blue_freya_bot?startgroup=true"),
+            text="Sɪɴ ᴀʟʟɪᴀɴᴄᴇ ",url="t.me/eruxbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
@@ -93,12 +93,12 @@ buttons = [
      
     ],
     [     InlineKeyboardButton(
-            text="Oғғ-ᴛᴏᴘɪᴄ", url="https://telegram.dog/flirt_area"),
+            text="Oғғ-ᴛᴏᴘɪᴄ", url="https://telegram.dog/sinXalliance"),
     
     ],
     [
         InlineKeyboardButton(
-            text="Uᴘᴅᴀᴛᴇs", url="https://telegram.dog/eruxupdates"),
+            text="Uᴘᴅᴀᴛᴇs", url="https://telegram.dog/sinxupdates"),
     ],
 ]
 
