@@ -238,7 +238,7 @@ def start(update: Update, context: CallbackContext):
                             text="Aɴɪᴍᴇ ʙᴏᴛ",
                             url="https://t.me/MeliodasXsinbot"),
                         InlineKeyboardButton(
-                            text="Mᴜsɪᴄ ʙᴏᴛ 
+                            text="Mᴜsɪᴄ ʙᴏᴛ",
 ",
                             url="https://t.me/MeliodasXbot")
                     ],
