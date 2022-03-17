@@ -93,7 +93,7 @@ buttons = [
      
     ],
     [     InlineKeyboardButton(
-            text="Oғғ-ᴛᴏᴘɪᴄ", url="https://telegram.dog/sinXalliance"),
+            text="Sɪɴ ᴜɴɪᴏɴ", url="https://telegram.dog/tsinXnetwork"),
     
     ],
     [
@@ -223,7 +223,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             GROUP_START_IMG,
-            caption="<code> oi baka I'm eru \nI am Awake Since</code>: <code>{}</code>".format(
+            caption="<code> sins awaken to capture the world \nwe haven't slept Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
