@@ -72,7 +72,8 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-GROUP_START_IMG = "https://telegra.ph/file/cd39ddc9c1636b8a84ba4.mp4"
+GROUP_START_IMG = "
+https://telegra.ph/file/c5842d6c95e67c64094ad.mp4"
 
 PM_START_TEXT = """
 
@@ -235,16 +236,17 @@ def start(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Cʜᴇʀʀʏ-ᴋᴜɴ ",
-                            url="https://t.me/yoi_babes"),
+                            text="Aɴɪᴍᴇ ʙᴏᴛ",
+                            url="https://t.me/MeliodasXsinbot"),
                         InlineKeyboardButton(
-                            text="Uᴘᴅᴀᴛᴇs",
-                            url="https://t.me/eruxupdates")
+                            text="Mᴜsɪᴄ ʙᴏᴛ 
+",
+                            url="https://t.me/MeliodasXbot")
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Hᴇʟᴘ",
-                            url="t.me/eruxbot?start=help")
+                            text="Sɪɴ ᴜɴɪᴏɴ",
+                            url="t.me/tsinXnetwork")
                     ]]))
 
 
