@@ -100,22 +100,6 @@ buttons = [
         InlineKeyboardButton(
             text="Uᴘᴅᴀᴛᴇs", url="https://telegram.dog/eruxupdates"),
     ],
-    [
-        InlineKeyboardButton(
-            text="Cʜᴇʀʀʏ-ᴋᴜɴ ", url="https://t.me/yoi_babes"),
-          
-
-
-InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ", url="https://telegram.dog/eruXsupport"
-        ),
-
-    ],
-    [
-        InlineKeyboardButton(
-                    text="GɪᴛHᴜʙ ^_^", url="https://github.com/baby-kun"
-        ),
-    ],
 ]
 
 
