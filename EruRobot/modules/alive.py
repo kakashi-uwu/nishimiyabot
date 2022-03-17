@@ -19,5 +19,5 @@ async def awake(event):
   TEXT += f"┣[× **Tᴇʟᴇᴛʜᴏɴ :** `{tlhver}` \n\n"
   TEXT += f"┣[× **ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n\n"
   TEXT += "╚═══──────═══╝"
-  BUTTON = [[Button.url("Hᴇʟᴘ", "https://t.me/eruxrobot?start=help"), Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/eruxsupport")]]
+  BUTTON = [[Button.url("Hᴇʟᴘ", "https://t.me/eruxrobot?start=help"), Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/sinxsupport")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
