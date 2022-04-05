@@ -76,7 +76,7 @@ GROUP_START_IMG = "https://telegra.ph/file/c5842d6c95e67c64094ad.mp4"
 
 PM_START_TEXT = """
 
-× ʜᴇʟʟᴏ [(^_^メ)](https://telegra.ph/file/c370fcaab8a33d83d2ba0.mp4), I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
+× ʜᴇʟʟᴏ [(^_^)](https://telegra.ph/file/c8066f6ecf244470c34ab.jpg), I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
 ╔═──────────────────═╗
 ×` ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
 ╚═──────────────────═╝
@@ -105,7 +105,7 @@ buttons = [
 
 HELP_STRINGS = """
 ──────────────────────
-`× ʜɪ.. ɪ'ᴍ` eru [×](https://telegra.ph/file/db73c26b18976abf21db0.mp4)
+`× ʜɪ.. ɪ'ᴍ` eru [×](https://telegra.ph/file/6ce248db6aca732599d99.jpg)
 ──────────────────────
 `× Cʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɢᴏ ᴛʜʀᴏᴜɢʜ ᴍʏ ᴀʙɪʟɪᴛɪᴇs`"""
 
