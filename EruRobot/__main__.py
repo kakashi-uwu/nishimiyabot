@@ -695,7 +695,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**[^_^]I'm awake again(https://telegra.ph/file/4ffe2bee297e10d601272.jpg)**""",
+                f"""**[(^_^)I'm awake again](https://telegra.ph/file/4ffe2bee297e10d601272.jpg)**""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
