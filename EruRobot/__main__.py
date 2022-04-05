@@ -72,11 +72,11 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-GROUP_START_IMG = "https://telegra.ph/file/c5842d6c95e67c64094ad.mp4"
+GROUP_START_IMG = "https://telegra.ph/file/631e29b9ab986c9bc105b.jpg"
 
 PM_START_TEXT = """
 
-× ʜᴇʟʟᴏ [(^_^)](https://telegra.ph/file/c8066f6ecf244470c34ab.jpg), I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
+× ʜᴇʟʟᴏ [(^_^)](https://telegra.ph/file/356cafb349497859dcfe1.jpg), I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
 ╔═──────────────────═╗
 ×` ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
 ╚═──────────────────═╝
@@ -232,14 +232,6 @@ def start(update: Update, context: CallbackContext):
                         InlineKeyboardButton(
                             text="Sᴜᴍᴍᴏɴ ᴇʀᴜ ",
                             url="t.me/{}?startgroup=true".format(context.bot.username))
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="Aɴɪᴍᴇ ʙᴏᴛ",
-                            url="https://t.me/MeliodasXsinbot"),
-                        InlineKeyboardButton(
-                            text="Mᴜsɪᴄ ʙᴏᴛ",
-                            url="https://t.me/MeliodasXbot")
                     ],
                     [
                         InlineKeyboardButton(
