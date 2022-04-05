@@ -85,7 +85,7 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="Sɪɴ ᴀʟʟɪᴀɴᴄᴇ ",url="t.me/eruxbot?startgroup=true"),
+            text="𝗦𝗶𝗻 𝗰𝗮𝗳𝗲🌸 ",url="t.me/eruxbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
