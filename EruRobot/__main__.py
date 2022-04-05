@@ -96,10 +96,6 @@ buttons = [
             text="Sɪɴ ᴜɴɪᴏɴ", url="https://telegram.dog/tsinXnetwork"),
     
     ],
-    [
-        InlineKeyboardButton(
-            text="Uᴘᴅᴀᴛᴇs", url="https://telegram.dog/sinxupdates"),
-    ],
 ]
 
 
