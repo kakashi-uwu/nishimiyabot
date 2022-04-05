@@ -217,9 +217,9 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_animation(
+        update.effective_message.reply_photo(
             GROUP_START_IMG,
-            caption="<code> sins awaken to capture the world \nwe haven't slept Since</code>: <code>{}</code>".format(
+            caption="<code> I've joined the sins haha \n haven't slept Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
