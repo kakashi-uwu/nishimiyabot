@@ -28,7 +28,7 @@ sites_list = {
     "Jikan": "https://api.jikan.moe/v3"
 }
 
-PING_IMG = "https://telegra.ph/file/10e3ccea979228979cde6.jpg"
+PING_IMG = "https://telegra.ph/file/3e95e99ae48e47edc5bda.jpg"
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -101,7 +101,7 @@ def ping(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="System Stats 💻", callback_data="stats_callback")
+                  InlineKeyboardButton(text="supportchat 🍒", url="https://t.me/sinXsupport")
                   ]
                 ]
             ),
@@ -148,6 +148,6 @@ __help__ = """
 /ping: Eru pong
 """
 
-__mod_name__ = "ping⚡"
+__mod_name__ = "ping"
 __command_list__ = ["ping", "pingall"]
 __handlers__ = [PING_HANDLER, PINGALL_HANDLER]
