@@ -72,13 +72,12 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-ERU_PHOTO = "https://telegra.ph/file/631e29b9ab986c9bc105b.jpg"
 
-GROUP_START_IMG = "https://telegra.ph/file/631e29b9ab986c9bc105b.jpg"
+GROUP_START_IMG = "https://telegra.ph/file/ca978c2cf07b5a2571ebd.jpg"
 
 PM_START_TEXT = """
 
-× ʜᴇʟʟᴏ , I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
+× ʜᴇʟʟᴏ [×](https://telegra.ph/file/f70951846655ec984e68a.jpg) , I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
 ╔═──────────────────═╗
 ×` ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
 ╚═──────────────────═╝
@@ -103,7 +102,7 @@ buttons = [
 
 HELP_STRINGS = """
 ──────────────────────
-`× ʜɪ.. ɪ'ᴍ` eru [×](https://telegra.ph/file/6ce248db6aca732599d99.jpg)
+`× ʜɪ.. ɪ'ᴍ` eru [×](https://telegra.ph/file/38c6b7f9f84a7c96a1c03.jpg)
 ──────────────────────
 `× Cʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɢᴏ ᴛʜʀᴏᴜɢʜ ᴍʏ ᴀʙɪʟɪᴛɪᴇs`"""
 
@@ -212,9 +211,8 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-                update.effective_message.reply_photo(
+                update.effective_message.reply_text(
                 PM_START_TEXT,
-                ERU_PHOTO,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN, 
                 timeout=60,
