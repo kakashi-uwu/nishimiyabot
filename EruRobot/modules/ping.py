@@ -5,7 +5,6 @@ import re
 import os
 import asyncio
 from typing import List
-from EruRobot.modules.sudoers import bot_sys_stats
 
 import requests
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
