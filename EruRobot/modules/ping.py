@@ -1,19 +1,31 @@
 import time
+import importlib
+from sys import argv
+import re
+import os
+import asyncio
 from typing import List
 
 import requests
-from telegram import ParseMode, Update
-from telegram.ext import CallbackContext, run_async
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    run_async,
+    MessageHandler,
+)
 
 from EruRobot import StartTime, dispatcher
-from EruRobot.modules.helper_funcs.chat_status import sudo_plus
+from pyrogram import filters
 from EruRobot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
     "Kaizoku": "https://animekaizoku.com",
     "Kayo": "https://animekayo.com",
-    "Jikan": "https://api.jikan.moe/v3",
+    "Jikan": "https://api.jikan.moe/v3"
 }
 
 PING_IMG = "https://telegra.ph/file/10e3ccea979228979cde6.jpg"
