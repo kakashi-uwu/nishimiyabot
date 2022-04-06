@@ -72,6 +72,8 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+PM_PHOTO = "https://telegra.ph/file/356cafb349497859dcfe1.jpg"
+
 GROUP_START_IMG = "https://telegra.ph/file/631e29b9ab986c9bc105b.jpg"
 
 PM_START_TEXT = """
@@ -210,8 +212,15 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT,
+                PM_START_TEXT.format(
+                    escape_markdown(context.bot.first_name),
+                    PM_PHOTO,
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
