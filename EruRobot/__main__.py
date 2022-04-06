@@ -214,7 +214,7 @@ def start(update: Update, context: CallbackContext):
         else:
             update.effective_message.reply_PHOTO(
                 ERU_PHOTO, PM_START_TEXT
-                 reply_markup=InlineKeyboardMarkup(buttons),
+                reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
