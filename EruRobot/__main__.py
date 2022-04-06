@@ -72,13 +72,13 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-PM_PHOTO = "https://telegra.ph/file/356cafb349497859dcfe1.jpg"
+ERU_IMG = "https://telegra.ph/file/356cafb349497859dcfe1.jpg"
 
 GROUP_START_IMG = "https://telegra.ph/file/631e29b9ab986c9bc105b.jpg"
 
 PM_START_TEXT = """
 
-× ʜᴇʟʟᴏ [(^_^)](https://telegra.ph/file/356cafb349497859dcfe1.jpg), I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
+× ʜᴇʟʟᴏ , I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
 ╔═──────────────────═╗
 ×` ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
 ╚═──────────────────═╝
@@ -212,10 +212,8 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
+            update.effective_message.reply_video(
+                ERU_IMG,
                 timeout=60,
             )
     else:
