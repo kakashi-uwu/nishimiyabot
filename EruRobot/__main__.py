@@ -72,6 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+ERU_N_IMG = "https://telegra.ph/file/ca978c2cf07b5a2571ebd.jpg"
 
 GROUP_START_IMG = "https://telegra.ph/file/ca978c2cf07b5a2571ebd.jpg"
 
@@ -431,32 +432,23 @@ def get_help(update: Update, context: CallbackContext):
     if chat.type != chat.PRIVATE:
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
-            update.effective_message.reply_text(
-                f"Contact me in PM to get help of {module.capitalize()}",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                text="Help",
-                                url="t.me/{}?start=ghelp_{}".format(
-                                    context.bot.username, module
-                                ),
-                            )
-                        ]
-                    ]
-                ),
-            )
+            update.effective_message.reply_photo(
+            ERU_N_IMG, caption= f"ummmm..., Click the Button Below to get help of {module.capitalize()}",
+                reply_markup=InlineKeyboardMarkup([[
+                    InlineKeyboardButton(
+                        text="click here",
+                        url="t.me/{}?start=ghelp_{}".format(
+                            context.bot.username, module))
+                ]]))
             return
-        update.effective_message.reply_text(
-            "Come over pm to see my available list of commands and modules.",
+
+        update.effective_message.reply_photo(
+            ERU_N_IMG, caption= "Click the Button Below to get the list of possible commands.",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton(
-                            text="help and commands",
-                            url="t.me/{}?start=help".format(context.bot.username),
-                        )
-                    ]
+                  [
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/eruXbakabot?start=help")
+                  ]
                 ]
             ),
         )
@@ -464,22 +456,19 @@ def get_help(update: Update, context: CallbackContext):
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
-        text = (
-            "Here is the available help for the *{}* module:\n".format(
-                HELPABLE[module].__mod_name__
-            )
-            + HELPABLE[module].__help__
-        )
+        text = "Here is the available help for the *{}* module:\n".format(HELPABLE[module].__mod_name__) \
+               + HELPABLE[module].__help__
         send_help(
-            chat.id,
-            text,
+            chat.id, text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
-            ),
-        )
+                [[InlineKeyboardButton(text="Back",
+                                       callback_data="help_back"),
+                  InlineKeyboardButton(text="Support",
+                                       url="t.me/SinXsupport")]]))
 
     else:
         send_help(chat.id, HELP_STRINGS)
+
 
 
 def send_settings(chat_id, user_id, user=False):
