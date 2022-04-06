@@ -72,7 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-ERU_N_IMG = "https://telegra.ph/file/ca978c2cf07b5a2571ebd.jpg"
+ERU_N_IMG = "https://telegra.ph/file/f0b61051b403ef67e6183.jpg"
 
 GROUP_START_IMG = "https://telegra.ph/file/ca978c2cf07b5a2571ebd.jpg"
 
