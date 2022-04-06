@@ -89,13 +89,13 @@ def ping(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="System Stats 💻", callback_data="stats_callback")
+                  InlineKeyboardButton(text="System Stats", url="https://t.me/sinXsupport")
                   ]
                 ]
             ),
         )
 
-
+    message.delete()
 
 @sudo_plus
 def pingall(update: Update, context: CallbackContext):
