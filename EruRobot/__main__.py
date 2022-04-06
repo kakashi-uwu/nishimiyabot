@@ -72,7 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-ERU_IMG = "https://telegra.ph/file/356cafb349497859dcfe1.jpg"
+ERU_PHOTO = "https://telegra.ph/file/356cafb349497859dcfe1.jpg"
 
 GROUP_START_IMG = "https://telegra.ph/file/631e29b9ab986c9bc105b.jpg"
 
@@ -212,8 +212,8 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_video(
-                ERU_IMG,
+            update.effective_message.reply_PHOTO(
+                ERU_PHOTO, PM_START_TEXT
                 timeout=60,
             )
     else:
