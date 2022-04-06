@@ -5,7 +5,7 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from EruRobot import StartTime, dispatcher, pgram
+from EruRobot import StartTime, dispatcher
 from EruRobot.modules.helper_funcs.chat_status import sudo_plus
 from EruRobot.modules.disable import DisableAbleCommandHandler
 
@@ -97,7 +97,6 @@ def ping(update: Update, context: CallbackContext):
 
     message.delete()
 
-@pgram.on_callback_query(filters.regex("stats_callback"))
 async def stats_callbacc(_, CallbackQuery):
     text = await bot_sys_stats()
     await pgram.answer_callback_query(CallbackQuery.id, text, show_alert=True)
