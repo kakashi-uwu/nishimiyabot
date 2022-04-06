@@ -1,34 +1,21 @@
 import time
-import importlib
-from sys import argv
-import re
-import os
-import asyncio
 from typing import List
 
 import requests
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    run_async,
-    MessageHandler,
-)
+from telegram import ParseMode, Update
+from telegram.ext import CallbackContext, run_async
 
-from EruRobot import StartTime, dispatcher, pgram
-from pyrogram import filters
+from EruRobot import StartTime, dispatcher
+from EruRobot.modules.helper_funcs.chat_status import sudo_plus
 from EruRobot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
     "Kaizoku": "https://animekaizoku.com",
     "Kayo": "https://animekayo.com",
-    "Jikan": "https://api.jikan.moe/v3"
+    "Jikan": "https://api.jikan.moe/v3",
 }
 
-PING_IMG = "https://telegra.ph/file/10e3ccea979228979cde6.jpg"
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -81,7 +68,7 @@ def ping_func(to_ping: List[str]) -> List[str]:
     return ping_result
 
 
-@run_async
+@sudo_plus
 def ping(update: Update, context: CallbackContext):
     msg = update.effective_message
 
@@ -90,65 +77,36 @@ def ping(update: Update, context: CallbackContext):
     end_time = time.time()
     telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
     uptime = get_readable_time((time.time() - StartTime))
-    text = f""" 
-           <b>PONG!!</b>\n<b>Time Taken:</b> <code>{telegram_ping}</code>\n<b>Service uptime:</b> <code>{uptime}</code>
-           """
 
-
-    update.effective_message.reply_photo(
-        PING_IMG, caption=text,
+    message.edit_text(
+        "<b>PONG</b> ✨\n"
+        "<b>Time Taken:</b> <code>{}</code>\n"
+        "<b>Service Uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                  [
-                  InlineKeyboardButton(text="System Stats 💻", callback_data="stats_callback")
-                  ]
-                ]
-            ),
-        )
+    )
 
-    message.delete()
 
-@pgram.on_callback_query(filters.regex("stats_callback"))
-async def stats_callbacc(_, CallbackQuery):
-    text = await bot_sys_stats()
-    await pgram.answer_callback_query(CallbackQuery.id, text, show_alert=True)
-
-@run_async
+@sudo_plus
 def pingall(update: Update, context: CallbackContext):
     to_ping = ["Kaizoku", "Kayo", "Telegram", "Jikan"]
     pinged_list = ping_func(to_ping)
-    pinged_list.insert(2, '')
+    pinged_list.insert(2, "")
     uptime = get_readable_time((time.time() - StartTime))
 
     reply_msg = "⏱Ping results are:\n"
     reply_msg += "\n".join(pinged_list)
-    reply_msg += '\n<b>Service uptime:</b> <code>{}</code>'.format(uptime)
+    reply_msg += "\n<b>Service uptime:</b> <code>{}</code>".format(uptime)
 
-    update.effective_message.reply_photo(
-        PING_IMG, caption=reply_msg,
-        parse_mode=ParseMode.HTML,
-        reply_markup=InlineKeyboardMarkup(
-                [
-                  [
-                  InlineKeyboardButton(text="System Stats 💻", callback_data="stats_callback")
-                  ]
-                ]
-            ),
-        )
+    update.effective_message.reply_text(
+        reply_msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
+    )
 
 
-PING_HANDLER = DisableAbleCommandHandler("ping", ping)
-PINGALL_HANDLER = DisableAbleCommandHandler("pingall", pingall)
+PING_HANDLER = DisableAbleCommandHandler("ping", ping, run_async=True)
+PINGALL_HANDLER = DisableAbleCommandHandler("pingall", pingall, run_async=True)
 
 dispatcher.add_handler(PING_HANDLER)
 dispatcher.add_handler(PINGALL_HANDLER)
 
-
-__help__ = """
-/ping: Miku pong
-"""
-
-__mod_name__ = "ping⚡"
 __command_list__ = ["ping", "pingall"]
 __handlers__ = [PING_HANDLER, PINGALL_HANDLER]
