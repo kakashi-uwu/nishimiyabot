@@ -5,7 +5,7 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from EruRobot import StartTime, dispatcher
+from EruRobot import StartTime, dispatcher, pgram
 from EruRobot.modules.helper_funcs.chat_status import sudo_plus
 from EruRobot.modules.disable import DisableAbleCommandHandler
 
