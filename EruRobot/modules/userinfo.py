@@ -43,6 +43,8 @@ from EruRobot.modules.helper_funcs.chat_status import sudo_plus
 from EruRobot.modules.helper_funcs.extraction import extract_user
 from EruRobot import telethn
 
+STATS_IMG = "https://telegra.ph/file/f0b61051b403ef67e6183.jpg"
+
 def no_by_per(totalhp, percentage):
     """
     rtype: num of `percentage` from total
@@ -464,7 +466,7 @@ def stats(update, context):
     status += "*➢ Uptime:* " + str(botuptime) + "\n"
     try:
         update.effective_message.reply_photo(
-            ERU_STATS_IMG,
+            STATS_IMG,
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
