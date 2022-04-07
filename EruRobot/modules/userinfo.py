@@ -443,42 +443,43 @@ def set_about_me(update: Update, context: CallbackContext):
             )
 
 @sudo_plus
-def stats(update: Update, context: CallbackContext):
-    db_size = SESSION.execute(
-        "SELECT pg_size_pretty(pg_database_size(current_database()))"
-    ).scalar_one_or_none()
+def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
-    status = "*╒═══「 Eru sama  statistics 」*\n\n"
-    status += "*• System Start time:* " + str(uptime) + "\n"
+    status = "*╒═══「 System statistics 」*\n\n"
+    status += "*➢ System Start time:* " + str(uptime) + "\n"
     uname = platform.uname()
-    status += "*• System:* " + str(uname.system) + "\n"
-    status += "*• Node name:* " + escape_markdown(str(uname.node)) + "\n"
-    status += "*• Release:* " + escape_markdown(str(uname.release)) + "\n"
-    status += "*• Machine:* " + escape_markdown(str(uname.machine)) + "\n"
+    status += "*➢ System:* " + str(uname.system) + "\n"
+    status += "*➢ Node name:* " + escape_markdown(str(uname.node)) + "\n"
+    status += "*➢ Release:* " + escape_markdown(str(uname.release)) + "\n"
+    status += "*➢ Machine:* " + escape_markdown(str(uname.machine)) + "\n"
     mem = virtual_memory()
     cpu = cpu_percent()
     disk = disk_usage("/")
-    status += "*• CPU:* " + str(cpu) + " %\n"
-    status += "*• RAM:* " + str(mem[2]) + " %\n"
-    status += "*• Storage:* " + str(disk[3]) + " %\n\n"
-    status += "*• Python Version:* " + python_version() + "\n"
-    status += "*• python-Telegram-Bot:* " + str(ptbver) + "\n"
-    status += "*• Uptime:* " + str(botuptime) + "\n"
-    status += "*• Database size:* " + str(db_size) + "\n"
-    kb = [[InlineKeyboardButton("Ping", callback_data="pingCB")]]
-
-
+    status += "*➢ CPU:* " + str(cpu) + " %\n"
+    status += "*➢ RAM:* " + str(mem[2]) + " %\n"
+    status += "*➢ Storage:* " + str(disk[3]) + " %\n\n"
+    status += "*➢ Python Version:* " + python_version() + "\n"
+    status += "*➢ python-Telegram-Bot:* " + str(ptbver) + "\n"
+    status += "*➢ Uptime:* " + str(botuptime) + "\n"
     try:
-        update.effective_message.reply_text(
+        update.effective_message.reply_photo(
+            ERU_STATS_IMG,
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/sinxupdates)\n\n"
-            + "╘══「 Powered by [•sin•](https://t.me/tsinXnetwork) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/sinXUpdates)\n\n"
+            + "\n╘══「 by [sin](https://t.me/tsinXnetwork) 」\n",
             parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(kb),
-            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="cherry-kun",
+                             url="github.com/baby-kun")
+                     ] 
+                ]
+            ),
         )
     except BaseException:
         update.effective_message.reply_text(
@@ -488,25 +489,21 @@ def stats(update: Update, context: CallbackContext):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/sinxupdates)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/sinxupdates)\n\n"
                 )
-                + "╘══「 Powered by [•sin•](https://t.me/tsinXnetwork) 」\n"
+                + "╘══「 by [sin](https://t.me/tsinXnetwork) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(kb),
-            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="cherry-kun",
+                             url="github.com/baby-kun")
+                     ] 
+                ]
+            ),
         )
-
-        
-@erucallback(pattern=r"^pingCB")
-def pingCallback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    start_time = time.time()
-    requests.get("https://api.telegram.org")
-    end_time = time.time()
-    ping_time = round((end_time - start_time) * 1000, 3)
-    query.answer("Pong! {}ms".format(ping_time))
-
 
 def about_bio(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
@@ -621,7 +618,7 @@ Examples:
 • /arq*:* ARQ API STATS
 
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/Ruka_updates/6)
+ Come and see [HP System explained](https://t.me/SINXSUPPORT)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio, run_async=True)
