@@ -76,9 +76,11 @@ ERU_N_IMG = "https://telegra.ph/file/f0b61051b403ef67e6183.jpg"
 
 GROUP_START_IMG = "https://telegra.ph/file/ca978c2cf07b5a2571ebd.jpg"
 
+BAKA_IMG = "https://telegra.ph/file/ca978c2cf07b5a2571ebd.jpg"
+
 PM_START_TEXT = """
 
-× ʜᴇʟʟᴏ [×](https://telegra.ph/file/f70951846655ec984e68a.jpg) , I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
+× ʜᴇʟʟᴏ , I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
 ╔═──────────────────═╗
 ×` ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
 ╚═──────────────────═╝
@@ -195,10 +197,13 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="Back", callback_data="help_back")]],
                     ),
                 )
-
+            elif args[0].lower() == "markdownhelp":
+                IMPORTED["extras"].markdown_help_sender(update)
+            elif args[0].lower() == "disasters":
+                IMPORTED["disasters"].send_disasters(update)
             elif args[0].lower().startswith("stngs_"):
                 match = re.match("stngs_(.*)", args[0].lower())
                 chat = dispatcher.bot.getChat(match.group(1))
@@ -212,19 +217,13 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-                update.effective_message.reply_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN, 
-                timeout=60,
-            )
-    else:
-        update.effective_message.reply_photo(
-            GROUP_START_IMG,
-            caption="<code> I've joined the sins haha \n haven't slept Since</code>: <code>{}</code>".format(
-                uptime
-            ),
-            parse_mode=ParseMode.HTML,
+            first_name = update.effective_user.first_name
+            update.effective_message.reply_photo(
+                BAKA_IMG,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name), escape_markdown(context.bot.first_name),
+                ),
+                parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
@@ -233,14 +232,23 @@ def start(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
+                            text="Hᴇʟᴘ", callback_data="help_back"),
+     
+                    ],
+                    [
+                        InlineKeyboardButton(
                             text="Sɪɴ ᴜɴɪᴏɴ",
                             url="t.me/tsinXnetwork")
                     ]]))
 
 
-
-
-
+    else:
+        update.effective_message.reply_text(
+            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+                uptime,
+            ),
+            parse_mode=ParseMode.HTML,
+        )
 
 
 def error_handler(update, context):
