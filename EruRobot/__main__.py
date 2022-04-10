@@ -224,22 +224,7 @@ def start(update: Update, context: CallbackContext):
                     escape_markdown(first_name), escape_markdown(context.bot.first_name),
                 ),
                 parse_mode=ParseMode.MARKDOWN,
-                reply_markup=InlineKeyboardMarkup(
-                    [[
-                        InlineKeyboardButton(
-                            text="Sᴜᴍᴍᴏɴ ᴇʀᴜ ",
-                            url="t.me/{}?startgroup=true".format(context.bot.username))
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="Hᴇʟᴘ", callback_data="help_back"),
-     
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="Sɪɴ ᴜɴɪᴏɴ",
-                            url="t.me/tsinXnetwork")
-                    ]]))
+                reply_markup=InlineKeyboardMarkup(buttons)
 
 
     else:
