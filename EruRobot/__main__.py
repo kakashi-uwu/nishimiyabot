@@ -224,7 +224,7 @@ def start(update: Update, context: CallbackContext):
                     escape_markdown(first_name), escape_markdown(context.bot.first_name),
                 ),
                 parse_mode=ParseMode.MARKDOWN,
-                reply_markup=InlineKeyboardMarkup(buttons)
+                reply_markup=InlineKeyboardMarkup(buttons),
 
 
     else:
