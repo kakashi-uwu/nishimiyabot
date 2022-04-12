@@ -87,18 +87,18 @@ PM_START_TEXT = """
 """
 
 buttons = [
-        [
-        InlineKeyboardButton(
-            text="𝗦𝗶𝗻 𝗰𝗮𝗳𝗲🌸 ",url="t.me/eruxbot?startgroup=true"),
-    ],
     [
         InlineKeyboardButton(
-              text="Hᴇʟᴘ", callback_data="help_back"),
-     
+            text="➕️ ᴀᴅᴅ eru ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/eruxbakabot?startgroup=true"),
     ],
-    [     InlineKeyboardButton(
-            text="Sɪɴ ᴜɴɪᴏɴ", url="https://telegram.dog/tsinXnetwork"),
-    
+    [
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="amelia_"),
+        InlineKeyboardButton(
+            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
     ],
 ]
 
