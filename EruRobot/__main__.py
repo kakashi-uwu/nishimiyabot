@@ -76,11 +76,13 @@ ERU_N_IMG = "https://telegra.ph/file/f0b61051b403ef67e6183.jpg"
 
 GROUP_START_IMG = "https://telegra.ph/file/ca978c2cf07b5a2571ebd.jpg"
 
+ERUPM_IMG = "https://telegra.ph/file/ca978c2cf07b5a2571ebd.jpg"
+
 BAKA_IMG = "https://telegra.ph/file/ca978c2cf07b5a2571ebd.jpg"
 
 PM_START_TEXT = """
 
-× ʜᴇʟʟᴏ [♥](https://telegra.ph/file/5fcf26113ba4489b29fc5.jpg), I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
+× ʜᴇʟʟᴏ , I'ᴍ ᴇʀᴜ ᴄʜɪᴛᴀɴᴅᴀ, I'ᴍ ᴀ ʜʏᴏᴜᴋᴀ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ ʀᴏʙᴏᴛ.
 ╔═──────────────────═╗
 ×` ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
 ╚═──────────────────═╝
@@ -214,8 +216,12 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_text(
-                PM_START_TEXT,
+            first_name = update.effective_user.first_name
+            update.effective_message.reply_photo(
+                ERUPM_IMG,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name), escape_markdown(context.bot.first_name),
+                ),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
