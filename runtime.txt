@@ -1,1 +1,2 @@
-python-3.10.1
+#Ye to Update krlia kro
+python-3.10.4
