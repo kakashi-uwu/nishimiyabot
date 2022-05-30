@@ -71,7 +71,6 @@ jikanpy
 tswift
 python-arq
 envparse
-#profanity (Credits to Julia)
 better_profanity
 textblob 
 nudepy
@@ -86,7 +85,6 @@ pendulum
 fuzzysearch
 img2pdf
 multicolorcaptcha
-git+https://github.com/python-telegram-bot/ptbcontrib.git
+ptbcontrib @ git+https://github.com/python-telegram-bot/ptbcontrib.git@907070d129b7cf80b0236d72fb498667b5b22b63
 git+https://github.com/TotallyNotChase/glitch-this.git
 pyYAML
-
